@@ -1,0 +1,37 @@
+.navbar-default{
+    background-color: #cc0000;
+    margin-bottom: 0px;
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+
+    }
+
+}
+.navbar-default .navbar-nav > li > a {
+    color:whitesmoke;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: whitesmoke;
+    background-color: #ac0000;
+}
+
+.navbar-default .navbar-nav  > li> a:hover,
+.navbar-default .navbar-nav  > li> a:focus {
+    color: darkgrey;
+    background-color: #bc0000;
+}
+.Logo{
+    height: 80px;
+    width:auto;
+}
+.header{
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
