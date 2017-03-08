@@ -1,16 +1,9 @@
-.navbar-default{
+.navbar-default {
     background-color: #cc0000;
     margin-bottom: 0px;
-}
-@media (min-width: 768px){
-    .navbar-nav{
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-        float: none;
-
-    }
-
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .navbar-default .navbar-nav > li > a {
     color:whitesmoke;
@@ -25,14 +18,20 @@
 
 .navbar-default .navbar-nav  > li> a:hover,
 .navbar-default .navbar-nav  > li> a:focus {
-    color: darkgrey;
     background-color: #bc0000;
 }
 .Logo{
     height: 80px;
     width:auto;
 }
-.header{
+.header {
     padding-top: 3px;
     padding-bottom: 10px;
+}
+#header{
+    background-image: url("Branding/WalkerComplex_cropped.jpg");
+    height: 150px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
