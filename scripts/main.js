@@ -2,6 +2,9 @@
  * Created by Trevor Vanderee on 2017-03-08.
  */
 jQuery(document).ready(function($) {
+    //Set the active class
+
+
 
     $('#myCarousel').carousel({
         interval: 5000
