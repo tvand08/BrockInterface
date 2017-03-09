@@ -15,19 +15,34 @@
 <body>
 
 <body>
-<div id ="header" class="container-fluid center-block header">
+<div id ="header" class="visible-md visible-lg container-fluid center-block header">
+    <img class ="Logo" src="Branding/Brock_University_Logo.png" height="">
+</div>
+<div  class="visible-xs visible-sm container-fluid center-block header">
     <img class ="Logo" src="Branding/Brock_University_Logo.png" height="">
 </div>
 <!--Navbar Begins-->
 <nav class=" navbar navbar-default ">
-    <div class="container-fluid ">
+    <div class = "navbar-nav ">
+        <button type = "button" class = "navbar-toggle"
+                data-toggle = "collapse" data-target = "#collapsable">
+            <span class = "sr-only">Toggle navigation</span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+        </button>
+        <h1 class="text-center visible-xs">Menu</h1>
+    </div>
+
+    <div class="collapse navbar-collapse " id="collapsable">
+
         <ul class="nav navbar-nav ">
-            <li id = "index" class="active"><a href="#">Home</a></li>
-            <li id="future"><a href="#">Future Students</a></li>
-            <li id="current"><a href="#">Current Students</a></li>
-            <li id="faculty"><a href="#">Faculty</a></li>
-            <li id="social"><a href="#">Social</a></li>
-            <li id="campus"><a href="#">Campus Resources</a></li>
+            <li id = "index" class="active"><a href="index.html">Home</a></li>
+            <li id="future" ><a href="#">Future Students</a></li>
+            <li id="current"><a href="Current_Students.html">Current Students</a></li>
+            <li id="faculty"><a href="Faculty.html">Faculty</a></li>
+            <li id="social"><a href="Social.html">Social</a></li>
+            <li id="campus"><a href="Campus.html">Campus Resources</a></li>
         </ul>
         <div class="col-sm-3 col-md-3 pull-right">
             <form class="navbar-form" role="search">
