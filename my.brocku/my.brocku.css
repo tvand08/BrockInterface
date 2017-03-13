@@ -30,19 +30,18 @@ a:hover {
 	position: relative;
 	border-top: 1px solid #007CC2;
 	border-bottom: 1px solid #007CC2;
-	text-align: right;
+	/*text-align: right;*/
 	margin-bottom: 20px;
 }
 
 .logout-options-bar li {
 	display: inline;
 	position: relative;
-	right: 10%;
 }
 
 .logout-options-bar a {
-	margin-left: 25px;
-	margin-right: 10px;
+	margin-left: 30px;
+	margin-right: 5px;
 }
 
 #user-name {
