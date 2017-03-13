@@ -5,7 +5,7 @@
     <title>Exam Schedule</title>
     <link rel="icon" href="Branding/Brock-Icon.png">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" >
-    <link rel="stylesheet" href="../css/my.brocku.css" type="text/css">
+    <link rel="stylesheet" href="my.brocku.css" type="text/css">
     <script src="scripts/jquery-3.1.1%20(1).js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="scripts/main.js"></script>
@@ -26,20 +26,22 @@
             <ul>
                 <a href="my_account.html"><li>My Account</li></a>
                 <a href="#"><li>Logout</li></a>
-                <li style="position:absolute; top:-100%; right:0;">Jane Doe</li>
+                <li id="user-name">Jane Doe</li>
             </ul>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3">
-            <ul>
-                <a href="index.html"><li>Program Status</li></a>
-                <a href="grade_inquiry.html"><li>Grade Inquiry</li></a>
-                <a href="course_registration.html"><li>Course Planning and Registration</li></a>
-                <li>Exam Schedules</li>
-                <a href="finances.html"><li>Finances</li></a>
-                <a href="tutoring.html"><li>Tutoring</li></a>
-            </ul>
+            <div class="my-brocku-nav-menu">
+                <ul>
+                    <a href="program_status.html"><li>Program Status</li></a>
+                    <a href="grade_inquiry.html"><li>Grade Inquiry</li></a>
+                    <a href="index.html"><li>Course Planning and Registration</li></a>
+                    <li style="color:#EE1D23">Exam Schedules</li>
+                    <a href="finances.html"><li>Finances</li></a>
+                    <a href="tutoring.html"><li>Tutoring</li></a>
+                </ul>
+            </div>
         </div>
         <div class="col-md-9">
             <h2>Exam Schedule</h2>
