@@ -6,6 +6,10 @@
 	text-decoration: none;
 }
 
+.invisible {
+	display: none;
+}
+
 .main-content {
 	border: 1px solid red;
 }
@@ -16,7 +20,7 @@
 	margin: 0;
 }
 
-.alpha-buttons li {
+#alpha-buttons li {
 	display: inline-block;
 	margin: 6px;
 	height: 40px;
@@ -27,15 +31,15 @@
 	text-align: center;
 }
 
-.alpha-buttons li:last-child {
+#alpha-buttons li:last-child {
 	border-color: orange;
 }
 
-.alpha-buttons a:hover {
+#alpha-buttons a:hover {
 	background-color: gold;
 }
 
-.alpha-buttons a {
+#alpha-buttons a {
 	display: block;
 	padding-top: 3px;
 	height: 100%;
@@ -43,7 +47,7 @@
 	color: black;
 }
 
-.alpha-buttons .no-data {
+#alpha-buttons .no-data {
 	padding-top: 3px;
 	display: block;
 	height: 100%;

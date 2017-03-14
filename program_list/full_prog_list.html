@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../main.css" type="text/css" >
     <link rel="stylesheet" href="program_list.css" type="text/css">
 
+    <script src="persistent.js"></script>
 </head>
 <body>
 
@@ -60,14 +61,12 @@
                         <div class="form-group">
                             <label for="faculty-list">Filter by Faculty:</label>
                             <select class="form-control" id="faculty-list">
-                                <option>All</option>
-                                <option>Applied Health Science</option>
-                                <option>Education</option>
-                                <option>Humanities</option>
-                                <option>Mathematics and Science</option>
-                                <option>Social Science</option>
-                                <option>Goodman School of Business</option>
-                                <option>Performing Arts</option>
+                                <option value="1">All</option>
+                                <option value="2">Applied Health Science</option>
+                                <option value="3">Education</option>
+                                <option value="4">Humanities</option>
+                                <option value="5">Mathematics and Science</option>
+                                <option value="6">Goodman School of Business</option>
                             </select>
                         </div>
                     </form>
@@ -77,32 +76,22 @@
                         <div class="form-group">
                             <label for="degree-list">Filter by Degree:</label>
                             <select class="form-control" id="degree-list">
-                                <option>All</option>
-                                <option>Accounting</option>
-                                <option>Arts</option>
-                                <option>Business Administration</option>
-                                <option>Computing and Business</option>
-                                <option>Early Childhood Education</option>
-                                <option>Education</option>
-                                <option>Music</option>
-                                <option>Public Health</option>
-                                <option>Recreation and Lesiure Studies</option>
-                                <option>Science</option>
+                                <option value="1">All</option>
+                                <option value="2">Arts</option>
+                                <option value="3">Business Administration</option>
+                                <option value="4">Early Childhood Education</option>
+                                <option value="5">Recreation and Lesiure Studies</option>
+                                <option value="6">Science</option>
                             </select>
                         </div>
                     </form>
                 </div>
             </div>
             
-            <ul class="alpha-buttons">
-                <li><a href="prog_list_A.html">A</a></li><li><a href="prog_list_B.html">B</a></li><li><a href="prog_list_C.html">C</a></li><li><a href="prog_list_A.html">D</a></li><li>
-                <a href="prog_list_A.html">E</a></li><li><a href="prog_list_A.html">F</a></li><li><a href="prog_list_A.html">G</a></li><li><a href="prog_list_A.html">H</a></li><li>
-                <a href="prog_list_A.html">I</a></li><li><a href="prog_list_A.html">J</a></li><li><span class="no-data">K</span></li><li><a href="prog_list_A.html">L</a></li><li>
-                <a href="prog_list_A.html">M</a></li><li><a href="prog_list_A.html">N</a></li><li><a href="prog_list_A.html">O</a></li><li><a href="prog_list_A.html">P</a></li><li>
-                <span class="no-data">Q</span></li><li><a href="prog_list_A.html">R</a></li><li><a href="prog_list_A.html">S</a></li><li><a href="prog_list_A.html">T</a></li><li>
-                <a href="prog_list_A.html">U</a></li><li><a href="prog_list_A.html">V</a></li><li><a href="prog_list_A.html">W</a></li><li><span class="no-data">X</span></li><li>
-                <span class="no-data">Y</span></li><li><span class="no-data">Z</span></li><li><a href="full_prog_list.html">All</a></li>
+            <ul id="alpha-buttons">
+                <!-- stuff will go here -->
             </ul>
+
             <h3>A</h3>
             <ul>
                 <li><a href="#">Aboriginal Studies</a></li>
