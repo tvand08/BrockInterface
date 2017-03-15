@@ -17,6 +17,15 @@
 
     <script src="persistent.js"></script>
 
+    <script>
+    /* http://stackoverflow.com/questions/15364298/select-element-by-exact-match-of-its-content */
+    $(document).ready(function(){
+        $("#alpha-buttons li").filter(function() {
+            return $(this).text() === "A";
+        }).css('border-color','#c00');
+    });
+    </script>
+
 </head>
 <body>
 
@@ -54,8 +63,7 @@
         <div class="col-md-2 col-xs-0"></div>
         <div class="col-md-8 col-xs-12 main-content">
             <h2>Programs</h2>
-            <p>link to faculties list<p>
-            <p>link to departments list</p>
+            <p>link to departments list?</p>
                         <div class="row">
                 <div class="col-md-6">
                     <form>
@@ -93,14 +101,16 @@
                 <!-- stuff will go here -->
             </ul>
 
-            <h3>A</h3>
-            <ul>
-                <li><a href="#">Aboriginal Studies</a></li>
-                <li><a href="#">Accounting</a></li>
-                <li><a href="#">Apple Picking</a></li>
-                <li><a href="#">Applied Linguistic</a></li>
-                <li><a href="#">Aquaponics</a></li>
-            <ul>
+            <div class="program-list">
+                <h3>A</h3>
+                <ul>
+                    <li><a href="#">Aboriginal Studies</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Apple Picking</a></li>
+                    <li><a href="#">Applied Linguistic</a></li>
+                    <li><a href="#">Aquaponics</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-2 col-xs-0"></div>
     </div>

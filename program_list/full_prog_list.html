@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="program_list.css" type="text/css">
 
     <script src="persistent.js"></script>
+
+    <script>
+    /* http://stackoverflow.com/questions/15364298/select-element-by-exact-match-of-its-content */
+    $(document).ready(function(){
+        $("#alpha-buttons li").filter(function() {
+            return $(this).text() === "All";
+        }).css('border-color','#c00');
+    });
+    </script>
 </head>
 <body>
 
@@ -53,8 +62,7 @@
         <div class="col-md-2 col-xs-0"></div>
         <div class="col-md-8 col-xs-12 main-content">
             <h2>Programs</h2>
-            <p><a href="#">link to faculties list</a><p>
-            <p><a href="#">link to departments list</a></p>
+            <p><a href="#">link to departments list?</a></p>
             <div class="row">
                 <div class="col-md-6">
                     <form>
@@ -92,43 +100,43 @@
                 <!-- stuff will go here -->
             </ul>
 
-            <h3>A</h3>
-            <ul>
-                <li><a href="#">Aboriginal Studies</a></li>
-                <li><a href="#">Accounting</a></li>
-                <li><a href="#">Apple Picking</a></li>
-                <li><a href="#">Applied Linguistic</a></li>
-                <li><a href="#">Aquaponics</a></li>
-            <ul>
-            <h3>B</h3>
-            <ul>
-                <li><a href="#">Basket Weaving</a></li>
-                <li><a href="#">Biochemistry</a></li>
-                <li><a href="#">Biomedical Sciences</a></li>
-                <li><a href="#">Business Communication</a></li>
-            </ul>
-            <h3>C</h3>
-            <ul>
-                <li><a href="#">Chemistry</a></li>
-                <li><a href="#">Child Health</a></li>
-                <li><a href="#">Classics</a></li>
-                <li><a href="#">Concurrent Education</a></li>
-            </ul>
-            <h3>D</h3>
-            <ul>
-                <li><a href="#">Demolition Expert</a></li>
-                <li><a href="#">Developmental Pie-ology</a></li>
-                <li><a href="#">Dinklage Appreciation</a></li>
-                <li><a href="#">Donut Hole Planning</a></li>
-            </ul>
-            <h3>E</h3>
-            <ul>
-                <li><a href="#">Endocrinology</a></li>
-                <li><a href="#">Exit Strategizing</a><li>
-                <li><a href="#">Elephant Trainer</a></li>
-            </ul>
-            <h3>F</h3>
-            <p>...</p>
+            <div class="program-list">
+                <h3>A</h3>
+                <ul>
+                    <li><a href="#">Aboriginal Studies</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Apple Picking</a></li>
+                    <li><a href="#">Applied Linguistics</a></li>
+                    <li><a href="#">Aquaponics</a></li>
+                </ul>
+                <h3>B</h3>
+                <ul>
+                    <li><a href="#">Basket Weaving</a></li>
+                    <li><a href="#">Biochemistry</a></li>
+                    <li><a href="#">Biomedical Sciences</a></li>
+                    <li><a href="#">Business Communication</a></li>
+                </ul>
+                <h3>C</h3>
+                <ul>
+                    <li><a href="#">Child Health</a></li>
+                    <li><a href="#">Classics</a></li>
+                    <li><a href="#">Concurrent Education</a></li>
+                </ul>
+                <h3>D</h3>
+                <ul>
+                    <li><a href="#">Demolition Expert</a></li>
+                    <li><a href="#">Developmental Pie-ology</a></li>
+                    <li><a href="#">Dinklage Appreciation</a></li>
+                    <li><a href="#">Donut Hole Planning</a></li>
+                </ul>
+                <h3>E</h3>
+                <ul>
+                    <li><a href="#">Endocrinology</a></li>
+                    <li><a href="#">Elephant Trainer</a></li>
+                </ul>
+                <h3>F</h3>
+                <p>...</p>
+            </div>
         </div>
         <div class="col-md-2 col-xs-0"></div>
     </div>
