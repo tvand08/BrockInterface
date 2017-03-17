@@ -62,6 +62,27 @@
 	left: 95%;
 }
 
+.rooster-teeth-carousel .rooster-indicator {
+	list-style: none;
+	position: absolute;
+	right: calc(50% - 38px); /* not actually centered, hopefully close enough */
+	bottom: -10px; /* ? */
+	z-index: 5;
+}
+
+.rooster-teeth-carousel .rooster-indicator li {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border: 2px solid black;
+	border-radius: 100%;
+	margin: 0px 1px 0px 1px;
+}
+
+.rooster-teeth-carousel .rooster-indicator li.active, .rooster-teeth-carousel .rooster-indicator li:hover {
+	background-color: black;
+}
+
 .rooster-teeth-carousel .slide-3 {
 	left: 185%;
 }

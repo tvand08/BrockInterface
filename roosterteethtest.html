@@ -1,133 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Rooster Teeth test</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="roosterteethtest.css" type="text/css">
+ <meta charset="UTF-8">
+ <title>Rooster Teeth test</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="roosterteethtest.css" type="text/css">
 
-    <script>
-    /* this is super hacky but it works */
-    var current = 1;
+ <script>
+  /* this is super hacky but it works */
+  var current = 0;
 
-	$(document).ready(function(){
+  $(document).ready(function(){
+    current = parseInt($('#unique-id .active').attr('data-slide-to'));
 
-	    $("#unique-id > .right-arrow").click(function(){
-	    	if (current == 1) {
-	    		$("#unique-id > .slide-1").css("transform","translate(-100%,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(-100%,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(-100%,0)");
-	    	} else if (current == 2) {
-	    		$("#unique-id > .slide-1").css("transform","translate(-200%,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(-200%,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(-200%,0)");
-	    	} else if (current == 3) {
-	    		$("#unique-id > .slide-1").css("transform","translate(0,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(0,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(0,0)");
-	    	}
-	    	current += 1;
-	        if (current == 4) { current = 1 };
-	    });
+    $("#unique-id li[data-target='#unique-id']").click(function(){
+      use_indicators('#unique-id',parseInt($(this).attr('data-slide-to')));
+    });
 
-	    $("#unique-id > .left-arrow").click(function(){
-	    	if (current == 1) {
-	    		$("#unique-id > .slide-1").css("transform","translate(-200%,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(-200%,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(-200%,0)");
-	    	} else if (current == 2) {
-	    		$("#unique-id > .slide-1").css("transform","translate(0,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(0,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(0,0)");
-	    	} else if (current == 3) {
-	    		$("#unique-id > .slide-1").css("transform","translate(-100%,0)");
-	    		$("#unique-id > .slide-2").css("transform","translate(-100%,0)");
-	    		$("#unique-id > .slide-3").css("transform","translate(-100%,0)");
-	    	}
-	    	current -= 1;
-	    	if (current == 0) { current = 3; }
-	    });
+    function use_indicators( id, next ) {
+      switch (next) {
+        case 1:
+        $(id+" > .slide-1").css("transform","translate(0,0)");
+        $(id+" > .slide-2").css("transform","translate(0,0)");
+        $(id+" > .slide-3").css("transform","translate(0,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='1']").addClass('active');
+        break;
+        case 2:
+        $(id+" > .slide-1").css("transform","translate(-100%,0)");
+        $(id+" > .slide-2").css("transform","translate(-100%,0)");
+        $(id+" > .slide-3").css("transform","translate(-100%,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='2']").addClass('active');
+        break;
+        case 3:
+        $(id+" > .slide-1").css("transform","translate(-200%,0)");
+        $(id+" > .slide-2").css("transform","translate(-200%,0)");
+        $(id+" > .slide-3").css("transform","translate(-200%,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='3']").addClass('active');
+        break;
+      }
+    }
 
-	});
-	</script>
+    $("#unique-id > .right-arrow").click(function(){
+     current += 1;
+     if (current == 4) { current = 1 };
+     use_indicators('#unique-id',current);
+   });
+
+    $("#unique-id > .left-arrow").click(function(){
+     current -= 1;
+     if (current == 0) { current = 3; }
+     use_indicators('#unique-id',current);
+   });
+
+  });
+</script>
 </head>
 <body>
-<h1>Demo</h1>
-<!-- needs to be inside a container and row -->
-<div class="container-fluid">
+  <h1>Demo</h1>
+  <!-- needs to be inside a container and row -->
+  <div class="container-fluid">
     <div class="row no-gutters">
-       	<div id="unique-id" class="rooster-teeth-carousel col-xs-12">
+      <div id="unique-id" class="rooster-teeth-carousel col-xs-12">
 
-       		<!-- navigation arrows -->
-       		<div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
-          	<div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
+        <ol class="rooster-indicator">
+          <li data-target="#unique-id" data-slide-to="1" class="active"></li>
+          <li data-target="#unique-id" data-slide-to="2"></li>
+          <li data-target="#unique-id" data-slide-to="3"></li>
+        </ol>
 
-          	<!-- first slide -->
-          	<div class="row slide-1 no-gutters">
-             	<div class="col-xs-4">
-             	    <div class="slide-content">
-                 		<h3>Banana</h3>
-                 		<p>Hello World</p>
-                 	</div>
-             	</div>
-             	<div class="col-xs-4">
-             		<div class="slide-content">
-                 		<h3>Apple</h3>
-                 		<p>Any content can go in here</p>
-                 	</div>
-             	</div>
-             	<div class="col-xs-4">
-             		<div class="slide-content">
-                 		<h3>Pear</h3>
-                 		<img src="Branding/Brock-Icon.png">
-                 		<a href="https://www.wikipedia.org/"><p>Wikipedia</p></a>
-                 	</div>
-             	</div>
-          	</div>
+        <!-- navigation arrows -->
+        <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
+        <div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
 
-          	<!-- second slide -->
-          	<div class="row slide-2 no-gutters">
-              	<div class="col-xs-3">
-              		<div class="slide-content">
-                 		<h3>Orange</h3>
-                 		<p>This slide has four columns</p>
-                 	</div>
-            	</div>
-             	<div class="col-xs-3">
-             		<div class="slide-content">
-                		<h3>Kiwi</h3>
-                	</div>
-             	</div>
-             	<div class="col-xs-3">
-             		<div class="slide-content">
-                 		<h3>Lime</h3>
-                 	</div>
-             	</div>
-             	<div class="col-xs-3">
-             		<div class="slide-content">
-                 		<h3>Mango</h3>
-                 	</div>
-             	</div>
-          	</div>
+        <!-- first slide -->
+        <div class="row slide-1 no-gutters">
+          <div class="col-xs-4">
+            <div class="slide-content">
+             <h3>Banana</h3>
+             <p>Hello World</p>
+           </div>
+         </div>
+         <div class="col-xs-4">
+           <div class="slide-content">
+             <h3>Apple</h3>
+             <p>Any content can go in here</p>
+           </div>
+         </div>
+         <div class="col-xs-4">
+           <div class="slide-content">
+             <h3>Pear</h3>
+             <img src="Branding/Brock-Icon.png">
+             <a href="https://www.wikipedia.org/"><p>Wikipedia</p></a>
+           </div>
+         </div>
+       </div>
 
-          	<!-- third slide -->
-          	<div class="row slide-3 no-gutters">
-              	<div class="col-xs-5">
-              		<div class="slide-content">
-                 		<h3>Coconut</h3>
-                 	</div>
-             	</div>
-             	<div class="col-xs-7">
-             		<div class="slide-content">
-                 		<h3>Papaya</h3>
-                    </div>
-             	</div>
-          	</div>
-
+       <!-- second slide -->
+       <div class="row slide-2 no-gutters">
+         <div class="col-xs-3">
+          <div class="slide-content">
+           <h3>Orange</h3>
+           <p>This slide has four columns</p>
+         </div>
+       </div>
+       <div class="col-xs-3">
+         <div class="slide-content">
+          <h3>Kiwi</h3>
         </div>
-    </div>
+      </div>
+      <div class="col-xs-3">
+       <div class="slide-content">
+         <h3>Lime</h3>
+       </div>
+     </div>
+     <div class="col-xs-3">
+       <div class="slide-content">
+         <h3>Mango</h3>
+       </div>
+     </div>
+   </div>
+
+   <!-- third slide -->
+   <div class="row slide-3 no-gutters">
+     <div class="col-xs-5">
+      <div class="slide-content">
+       <h3>Coconut</h3>
+     </div>
+   </div>
+   <div class="col-xs-7">
+     <div class="slide-content">
+       <h3>Papaya</h3>
+     </div>
+   </div>
+ </div>
+
+</div>
+</div>
 </div>
 <p>thats it</p>
 </body>
