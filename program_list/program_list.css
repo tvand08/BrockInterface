@@ -26,17 +26,15 @@
 	height: 40px;
 	width: 40px;
 	font-size: 16pt;
-	border: 3px solid gold;
+	border: 3px solid #6A747B;
 	border-radius: 2px;
 	text-align: center;
 }
 
-#alpha-buttons li:first-child {
-	/*border-color: orange;*/
-}
-
-#alpha-buttons a:hover {
-	background-color: gold;
+#alpha-buttons li:hover, #alpha-buttons li:hover > a  {
+	background-color: #c00;
+	border-color: #c00;
+	color: white;
 }
 
 #alpha-buttons a {
@@ -47,12 +45,18 @@
 	color: black;
 }
 
-#alpha-buttons .no-data {
+#alpha-buttons li.no-data:hover {
+	background-color: inherit;
+	border-color: #6A747B;
+	color: inherit;
+}
+
+#alpha-buttons span.no-data {
 	padding-top: 3px;
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-color: gold;
+	background-color: #6A747B;
 }
 
 

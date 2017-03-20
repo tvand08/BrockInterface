@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#alpha-buttons").append('<li><a href="javascript:void(0)" onclick="out(' + "'" + 'All' + "'" + ')">All</a></li>');
     for (var i = 65; i <= 90; i++) {
         if (i === 75 || i === 81 || (i > 87 && i < 91)) {
-            $("#alpha-buttons").append('<li><span class="no-data">' + String.fromCharCode(i) + '</span></li>')
+            $("#alpha-buttons").append('<li class="no-data"><span class="no-data">' + String.fromCharCode(i) + '</span></li>')
         } else if (i > 67) {
             $("#alpha-buttons").append('<li><a href="javascript:void(0)" onclick="out(' + "'" + 'A' + "'" + ')">' + String.fromCharCode(i) + '</a></li>');
         } else {
