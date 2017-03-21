@@ -13,7 +13,9 @@
     font-size: x-large;
 }
 #large-nav >li >a{
-    font-size: x-large;
+    font-size: larger;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 #medium-nav >li >a{
     font-size: larger;
@@ -30,13 +32,16 @@
 .navbar-default .navbar-nav > .active > a:focus {
     color: whitesmoke;
     background-color: #ac0000;
+    text-decoration: none;
 }
 
 .navbar-default .navbar-nav  > li> a:hover,
 .navbar-default .navbar-nav  > li> a:focus {
     background-color: #bc0000;
-
+    color: whitesmoke;
+    text-decoration: underline;
 }
+
 #mobile-drowdown > li >a {
     padding-right: 5px;
     padding-left: 5px;
@@ -136,7 +141,7 @@ div.col-sm-3.col-md-3.pull-right{
     font-weight: lighter;
     color: #000000;
     height: 100%;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 30px;
 }
 #blurb-wrap{
@@ -213,6 +218,7 @@ div.col-sm-3.col-md-3.pull-right{
     padding-right: 0px;
     paddding-left:0px;
     margin-top: 30px;
+
 
 }
 #social-media >a > i{
