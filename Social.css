@@ -1,0 +1,36 @@
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+div#events {
+	margin-top: 20px;
+}
+
+div#events .row {
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+
+div#events .col-xs-2 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	font-weight:lighter;
+	font-size: 16pt;
+	text-align: center;
+}
+
+div#events .col-xs-10 {
+	font-size: 16pt;
+}
+
+div#icon-list i {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
