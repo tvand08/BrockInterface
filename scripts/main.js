@@ -4,7 +4,9 @@
 jQuery(document).ready(function($) {
     //Set the active class
 
-
+    $('[data-toggle="popover"]').popover({
+        container: "body"
+    });
 
     $('#myCarousel').carousel({
         interval: 5000
