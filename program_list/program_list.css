@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+* a {
+	text-decoration: none;
+}
+
+.invisible {
+	display: none;
+}
+
+.main-content {
+	/*border: 1px solid red;*/
+}
+
+.main-content ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#alpha-buttons li {
+	display: inline-block;
+	margin: 6px;
+	height: 40px;
+	width: 40px;
+	font-size: 16pt;
+	border: 3px solid #6A747B;
+	border-radius: 2px;
+	text-align: center;
+}
+
+#alpha-buttons li:hover, #alpha-buttons li:hover > a  {
+	background-color: #c00;
+	border-color: #c00;
+	color: white;
+}
+
+#alpha-buttons a {
+	display: block;
+	padding-top: 3px;
+	height: 100%;
+	width: 100%;
+	color: black;
+}
+
+#alpha-buttons li.no-data:hover {
+	background-color: inherit;
+	border-color: #6A747B;
+	color: inherit;
+}
+
+#alpha-buttons span.no-data {
+	padding-top: 3px;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #6A747B;
+}
+
+
+
