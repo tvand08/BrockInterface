@@ -3,17 +3,28 @@
     margin-bottom: 0px;
     border: none;
     border-radius: 0;
-    padding-left: -5px;
+    padding-left: 20px;
 
 }
-.nav.navbar-nav{
-    display: inline-flex;
-}
+
 .navbar-default .navbar-nav > li > a {
     color:whitesmoke;
     font-family: "Trebuchet MS";
     font-size: x-large;
 }
+#large-nav >li >a{
+    font-size: x-large;
+}
+#medium-nav >li >a{
+    font-size: larger;
+}
+#small-nav >li >a{
+    font-size: larger;
+}
+#mobile-nav >li >a{
+    font-size: x-large;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -25,6 +36,10 @@
 .navbar-default .navbar-nav  > li> a:focus {
     background-color: #bc0000;
 
+}
+#mobile-drowdown > li >a {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 div.col-sm-3.col-md-3.pull-right{
     padding: 0px;
