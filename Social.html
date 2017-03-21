@@ -14,6 +14,58 @@
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>
+  /* this is super hacky but it works */
+  var current = 0;
+
+  $(document).ready(function(){
+    current = parseInt($('#unique-id .active').attr('data-slide-to'));
+
+    $("#unique-id li[data-target='#unique-id']").click(function(){
+      use_indicators('#unique-id',parseInt($(this).attr('data-slide-to')));
+    });
+
+    function use_indicators( id, next ) {
+      switch (next) {
+        case 1:
+        $(id+" > .slide-1").css("transform","translate(0,0)");
+        $(id+" > .slide-2").css("transform","translate(0,0)");
+        $(id+" > .slide-3").css("transform","translate(0,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='1']").addClass('active');
+        break;
+        case 2:
+        $(id+" > .slide-1").css("transform","translate(-100%,0)");
+        $(id+" > .slide-2").css("transform","translate(-100%,0)");
+        $(id+" > .slide-3").css("transform","translate(-100%,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='2']").addClass('active');
+        break;
+        case 3:
+        $(id+" > .slide-1").css("transform","translate(-200%,0)");
+        $(id+" > .slide-2").css("transform","translate(-200%,0)");
+        $(id+" > .slide-3").css("transform","translate(-200%,0)");
+        $(id+" li").removeClass('active');
+        $(id+" li[data-slide-to='3']").addClass('active');
+        break;
+      }
+    }
+
+    $("#unique-id > .right-arrow").click(function(){
+     current += 1;
+     if (current == 4) { current = 1 };
+     use_indicators('#unique-id',current);
+   });
+
+    $("#unique-id > .left-arrow").click(function(){
+     current -= 1;
+     if (current == 0) { current = 3; }
+     use_indicators('#unique-id',current);
+   });
+
+  });
+</script>
+
 </head>
 <body>
         <div id ="header" class="visible-md visible-lg visible-sm container-fluid center-block header">
@@ -134,7 +186,81 @@
     <div class="row">
         <div class="col-md-1 col-xs-0"></div>
         <div class="col-md-10 col-xs-12">
+
             <h2>News</h2>
+            <div id="unique-id" class="rooster-teeth-carousel col-xs-12">
+                <ol class="rooster-indicator">
+                  <li data-target="#unique-id" data-slide-to="1" class="active"></li>
+                  <li data-target="#unique-id" data-slide-to="2"></li>
+                  <li data-target="#unique-id" data-slide-to="3"></li>
+                </ol>
+
+                <!-- navigation arrows -->
+                <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                <div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
+
+                <!-- first slide -->
+                <div class="row slide-1 no-gutters">
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Banana</h3>
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Apple</h3>
+                            <p>Any content can go in here</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Pear</h3>
+                            <img src="Branding/Brock-Icon.png">
+                            <a href="https://www.wikipedia.org/"><p>Wikipedia</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second slide -->
+                <div class="row slide-2 no-gutters">
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Orange</h3>
+                            <p>This slide has four columns</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Kiwi</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Lime</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Mango</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third slide -->
+                <div class="row slide-3 no-gutters">
+                    <div class="col-xs-5">
+                        <div class="slide-content">
+                            <h3>Coconut</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="slide-content">
+                            <h3>Papaya</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <h2>Parking locations, directions (contact us)</h2>
         </div>
