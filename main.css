@@ -3,8 +3,11 @@
     margin-bottom: 0px;
     border: none;
     border-radius: 0;
-    padding-left: 50px;
+    padding-left: -5px;
 
+}
+.nav.navbar-nav{
+    display: inline-flex;
 }
 .navbar-default .navbar-nav > li > a {
     color:whitesmoke;
@@ -23,6 +26,11 @@
     background-color: #bc0000;
 
 }
+div.col-sm-3.col-md-3.pull-right{
+    padding: 0px;
+    width: 22%;
+}
+
 .Logo{
     margin-top: 20px;
     margin-left: 20px;
@@ -50,14 +58,10 @@
 #myCarousel{
     margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-.carousel-inner .item > img{
-    height: 40%;
-    width: auto;
-    float: right;
-}
+
 
 .carousel-indicators {
     position: absolute;
@@ -93,21 +97,53 @@
     background-color: #cc0000;
     height: 100px;
     width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
 }
-#footer > p{
+#footer > div > p{
     color: whitesmoke;
     font-family: "Trebuchet MS";
-    margin-top: 20px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 5%;
+
 }
-
-#title{
-
+#footer >div {
+   padding-top: 10px;
 }
 
 #nav-collapsed{
     font-family: "Trebuchet MS";
     font-weight: 800;
     color:whitesmoke;
+}
+#page-title{
+    font-family: "Trebuchet MS";
+    font-weight: 900;
+    color: #cc0000;
+    height: 100%;
+}
+
+.item.item-home {
+    height: 250px;
+    width: 100%;
+    background-color: #cc0000;
+}
+.item.item-home > img{
+    height: 100%;
+    float: right;
+}
+.item.item-home > h2{
+    font-family: "Trebuchet MS";
+    font-weight: 900;
+    float: left ;
+
+    color:whitesmoke;
+}
+#mobile-header > img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+#mobile-header{
+    background-color: #cc0000;
 }
