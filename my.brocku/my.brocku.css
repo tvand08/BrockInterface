@@ -1,0 +1,145 @@
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+.Logo {
+	margin: 20px 0px 20px 20px;
+    height: 120px;
+    width:auto;
+}
+
+.portal-title {
+	position: relative;
+	top: 33px;
+	left: -30px;
+	font-size: 40pt;
+}
+
+* ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* logout bar */
+.logout-options-bar ul {
+	position: relative;
+	border-top: 1px solid #007CC2;
+	border-bottom: 1px solid #007CC2;
+	/*text-align: right;*/
+	margin-bottom: 20px;
+}
+
+.logout-options-bar li {
+	display: inline;
+	position: relative;
+}
+
+.logout-options-bar a {
+	margin-left: 30px;
+	margin-right: 5px;
+}
+
+#user-name {
+    position: absolute;
+    top: calc(-24pt - 10px);
+    right: 10%;
+    font-size: 24pt;
+}
+/* end */
+
+/* navigation */
+.my-brocku-nav-menu {
+	border: 2px #007CC2 solid;
+	margin: 10px;
+	padding: 10px 0 10px 0;
+}
+
+.my-brocku-nav-menu li {
+	padding: 0 20px 0 20px;
+	margin: 1px 0 1px 0;
+	color: black;
+}
+
+.my-brocku-nav-menu a:hover {
+	background-color: silver;
+	text-decoration: none;
+}
+
+.my-brocku-nav-menu a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* end */
+
+/* main content */
+.main-content {
+	border: 2px solid green;
+}
+
+.main-content table {
+	width: 500px;
+	border: 1px solid black;
+}
+
+.main-content td {
+	padding: 0 0 0 5px;
+}
+
+.main-content tr:first-child {
+	font-weight: bold;
+}
+
+/* https://www.w3schools.com/html/html_tables.asp */
+.main-content tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* end */
+
+
+/* my account page */
+.my-account {
+	padding: 0 20px 0 20px;
+	border: 2px solid yellow;
+}
+
+.my-account .button {
+	display: inline-block;
+	text-align: center;
+	padding:0;
+	height: 40px;
+	width: 100px;
+	border: 4px solid #007CC2;
+}
+
+.my-account a:hover {
+	text-decoration: none;
+	background-color: silver;
+}
+
+.my-account .button p {
+	position: relative;
+	top: 5px;
+}
+/* end */
+
+
+/* 
+#EE1D23 red
+#F2642F orange
+#FED105 yellow
+#6E5200 olive
+#6CB43F green
+#007B85 aquamarine
+#007CC2 blue
+#56004E magenta
+#1E358B violet
+#653500 brown
+#231F20 black
+#6A747B grey
+*/
