@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" />
-    <title>Brock University</title>
+    <title>Brock University- Current Students</title>
     <link rel="icon" href="Branding/Brock-Icon.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" >
     <link rel="stylesheet" href="main.css" type="text/css" >
+    <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.css">
     <script src="scripts/jquery-3.1.1%20(1).js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="scripts/main.js"></script>
@@ -14,14 +15,16 @@
 
 </head>
 <body>
-
 <div id ="header" class="visible-md visible-lg visible-sm container-fluid center-block header">
-    <img class ="Logo" src="Branding/Brock_University_Logo.png" height="">
+    <img class ="Logo" src="Branding/Brock_University_Logo.png">
 </div>
 <div  id = "mobile-header" class="visible-xs container-fluid center-block header">
-    <img class ="Logo" src="Branding/Brock_University_Logo.png" height="">
+    <img class ="Logo" src="Branding/Brock_University_Logo.png">
 </div>
+
+
 <!--Navbar Begins-->
+
 <nav class=" navbar navbar-default ">
     <div class = "navbar-nav ">
         <button type = "button" class = "navbar-toggle"
@@ -31,40 +34,40 @@
             <span class = "icon-bar"></span>
             <span class = "icon-bar"></span>
         </button>
-        <h1 id="nav-collapsed" class="text-center visible-xs">Home</h1>
+        <h1 id="nav-collapsed" class="text-center visible-xs">Current Students</h1>
     </div>
 
     <div class="collapse navbar-collapse " id="collapsable">
 
 
         <ul class="nav navbar-nav visible-xs text-center">
-            <li id ="mobile-nav" class="active"><a href="index.html">Home</a></li>
-            <li ><a href="Future_Students.html">Future Students</a></li>
-            <li ><a href="Current_Students.html">Current Students</a></li>
+            <li id ="mobile-nav" ><a href="index.html">Home</a></li>
+            <li  ><a href="Future_Students.html">Future Students</a></li>
+            <li class="active"><a href="Current_Students.html">Current Students</a></li>
             <li ><a href="Faculty.html">Faculty</a></li>
             <li ><a href="Social.html">Social</a></li>
             <li ><a href="Campus.html">Campus Resources</a></li>
         </ul>
         <ul id = "small-nav" class="nav navbar-nav visible-sm ">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li ><a href="Future_Students.html">Future Students</a></li>
-            <li ><a href="Current_Students.html">Current Students</a></li>
+            <li class="active"><a href="Current_Students.html">Current Students</a></li>
             <li ><a href="Faculty.html">Faculty</a></li>
             <li ><a href="Social.html">Social</a></li>
             <li ><a href="Campus.html">Campus Resources</a></li>
         </ul>
         <ul id = "medium-nav" class="nav navbar-nav visible-md ">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li ><a href="Future_Students.html">Future Students</a></li>
-            <li ><a href="Current_Students.html">Current Students</a></li>
+            <li class="active"><a href="Current_Students.html">Current Students</a></li>
             <li ><a href="Faculty.html">Faculty</a></li>
             <li ><a href="Social.html">Social</a></li>
             <li ><a href="Campus.html">Campus Resources</a></li>
         </ul>
         <ul id="large-nav" class="nav navbar-nav visible-lg ">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li ><a href="Future_Students.html">Future Students</a></li>
-            <li ><a href="Current_Students.html">Current Students</a></li>
+            <li class="active" ><a href="Current_Students.html">Current Students</a></li>
             <li ><a href="Faculty.html">Faculty</a></li>
             <li ><a href="Social.html">Social</a></li>
             <li ><a href="Campus.html">Campus Resources</a></li>
@@ -81,49 +84,48 @@
         </div>
     </div>
 </nav>
-</body>
-
-<!--End Header-->
-<div class="visible-lg visible-md visible-sm">
-    <div id="myCarousel" class="carousel slide visible-lg visible-md visible-sm " data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-                <div class="item item-home active ">
-                    <img src="Branding/brock_dusk_shot_cropped.jpg" alt="Dusk">
-                    <h2>Welcome To Brock!</h2>
-                </div>
-
-                <div class="item item-home">
-                    <img src="Branding/WalkerComplex_cropped.jpg" alt="Walker Complex">
-                </div>
-
-                <div class="item item-home">
-                    <img src="Branding/Brock_Cairns_Cropped.jpg" alt="Cairns">
-                </div>
-            </div>
-
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+<div class="quick-links container-fluid">
+<div class="row  visible-lg visible-md visible-sm ">
+    <div class="col-lg-12">
+        <h1 id = "page-title" class="text-center">Current Students</h1>
     </div>
 </div>
-<div class="container">
+<!-- End Header-->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Academic Resources</h2>
+        </div>
+    </div>
+    <div class="row ">
 
+        <div  class="current-links text-center col-xs-12  col-lg-4 ">
+            <a href="" style="text-decoration: none">
+            <h1>Student Portal</h1>
+            </a>
+        </div>
+
+        <div  class="current-links text-center col-xs-12  col-lg-4">
+            <a href="https://lms.brocku.ca" style="text-decoration: none">
+            <h1>Isaak(Sakai)</h1>
+            </a>
+        </div>
+        <div  class="current-links text-center col-xs-12  col-lg-4 ">
+            <a href="https://myoffice.brocku.ca" style="text-decoration: none">
+                <h1>Office 365</h1>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p id="current-blurb">Brock has always been a place for well-rounded people to nurture both sides of their brain. Yes, both
+                sides. Not just the academic side of your brain that you take to your classes, but the other side too.
+                The side of the brain that drives your diverse passions outside of the classroom. At Brock, we’re
+                encouraged to become well-rounded individuals. So go on, get involved. Develop outside of the classroom
+                and make your Brock experience a great one!</p>
+        </div>
+    </div>
 </div>
+
 
 <!--Begin Footer-->
 <div id="footer" class="row">
