@@ -12,9 +12,21 @@
 	padding-left: 0;
 }
 
+#news h2 {
+	padding-top: 20px;
+}
+
 div#events {
 	margin-top: 20px;
 	overflow: scroll;
+	overflow-x: hidden;
+	border: 1px solid #6a747b;
+	border-radius: 3px;
+}
+
+div#events h2 {
+	padding-left: 15px;
+	padding-bottom: 10px;
 }
 
 div#events .row {
