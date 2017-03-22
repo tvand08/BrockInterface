@@ -148,23 +148,48 @@ div.col-sm-3.col-md-3.pull-right{
     padding-right:0px;
     padding-left:0px;
 }
-
+.carousel-inner{
+    background-color: #cc0000;
+}
 .item.item-home {
-    height: 250px;
+    height: auto;
     width: 100%;
     background-color: #cc0000;
 }
 .item.item-home > img{
-    height: 100%;
+    width: 71.5%;
+    height: auto;
     float: right;
 }
 .item.item-home > h2{
     font-family: "Trebuchet MS";
     font-weight: 900;
     float: left ;
-
     color:whitesmoke;
+    padding-left: 6%;
+    padding-top: 4%;
+    justify-content: center;
 }
+.item.item-home > h3{
+    font-family: "Trebuchet MS";
+    font-weight: 900;
+    float: left ;
+    color:whitesmoke;
+    padding-left: 6%;
+    padding-top: 4%;
+    justify-content: center;
+}
+.item.item-home > h4{
+    font-family: "Trebuchet MS";
+    font-weight: 900;
+    float: left ;
+    color:whitesmoke;
+    padding-left: 6%;
+    padding-top: 4%;
+    justify-content: center;
+}
+
+
 #mobile-header > img{
     display: block;
     margin: auto;
@@ -205,7 +230,6 @@ div.col-sm-3.col-md-3.pull-right{
     margin-top: 3px;
     margin-left: 3px;
     box-shadow: 2px 2px #FFB5B5;
-
 }
 .quick-links.container-fluid{
     margin-top: 20px;
