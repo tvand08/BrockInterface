@@ -1,3 +1,6 @@
+/*
+Navbar and Header Styling
+*/
 .navbar-default {
     background-color: #cc0000;
     margin-bottom: 0px;
@@ -41,7 +44,11 @@
     color: whitesmoke;
     text-decoration: underline;
 }
-
+#nav-collapsed{
+    font-family: "Trebuchet MS";
+    font-weight: 800;
+    color:whitesmoke;
+}
 #mobile-drowdown > li >a {
     padding-right: 5px;
     padding-left: 5px;
@@ -75,14 +82,15 @@ div.col-sm-3.col-md-3.pull-right{
     background-repeat: no-repeat;
 }
 
+/*
+Carousel setup
+*/
 #myCarousel{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
 }
-
-
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
@@ -113,6 +121,9 @@ div.col-sm-3.col-md-3.pull-right{
     background-color: #fff;
 }
 
+/*
+Footer Styling
+*/
 #footer{
     background-color: #cc0000;
     width: 100%;
@@ -120,7 +131,7 @@ div.col-sm-3.col-md-3.pull-right{
     margin-left: 0px;
     margin-top: 30px;
 }
-#footer > div > p{
+#footer > div > .footer-address>  p{
     color: whitesmoke;
     font-family: "Trebuchet MS";
     padding-left: 5%;
@@ -130,11 +141,7 @@ div.col-sm-3.col-md-3.pull-right{
    padding-top: 10px;
 }
 
-#nav-collapsed{
-    font-family: "Trebuchet MS";
-    font-weight: 800;
-    color:whitesmoke;
-}
+
 #page-title{
     font-family: "Trebuchet MS";
     font-size:45px;
@@ -189,7 +196,9 @@ div.col-sm-3.col-md-3.pull-right{
     justify-content: center;
 }
 
-
+.container{
+    margin-top: 50px;
+}
 #mobile-header > img{
     display: block;
     margin: auto;
@@ -377,13 +386,13 @@ div.col-sm-3.col-md-3.pull-right{
 The following Css is for the latest news object
 */
 
-#latestNewsBody{
+.latestNewsBody{
     height: 270px;
     overflow: auto;
     border: solid thin #dddddd;
     padding-top: 0px;
 }
-#latestNewsHeader{
+.latestNewsHeader{
     border: solid thin #dddddd;
     background-color: #f5f5f5;
     border-top-left-radius:3px ;
@@ -395,6 +404,21 @@ The following Css is for the latest news object
     height: 60px;
     padding-top: 20px;
 }
-#latestNewsBody > a > h4{
+.seperator{
     border-bottom: solid #dddddd;
+    padding-top: 2px;
+    margin-bottom: 0px;
+}
+
+.seperator:hover{
+    background-color: #dddddd;
+}
+
+.seperator > a:hover{
+    text-decoration: none;
+}
+.seperator > a > h4:nth-child(1){
+    color:black;
+}.seperator > a > h4:nth-child(2){
+    color: #cc0000;
 }
