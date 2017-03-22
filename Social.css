@@ -52,11 +52,12 @@ div#icon-list a:hover {
 #unique-id {
 	overflow: hidden;
 	margin-bottom: 20px;
+	height: 30%;
 }
 
 .rooster-teeth-carousel {
 	position: relative;
-	height: 400px; /* width scales, height does not */
+	height: 100%; /* width scales, height does not */
 }
 
 .slide-content {
