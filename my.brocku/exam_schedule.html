@@ -6,10 +6,9 @@
     <link rel="icon" href="Branding/Brock-Icon.png">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" >
     <link rel="stylesheet" href="my.brocku.css" type="text/css">
-    <script src="scripts/jquery-3.1.1%20(1).js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -37,17 +36,46 @@
                     <a href="program_status.html"><li>Program Status</li></a>
                     <a href="grade_inquiry.html"><li>Grade Inquiry</li></a>
                     <a href="index.html"><li>Course Planning and Registration</li></a>
-                    <li style="color:#EE1D23">Exam Schedules</li>
+                    <li class="current-page">Exam Schedules</li>
                     <a href="finances.html"><li>Finances</li></a>
                     <a href="tutoring.html"><li>Tutoring</li></a>
                 </ul>
             </div>
         </div>
         <div class="col-md-9">
-            <h2>Exam Schedule</h2>
-            <p>dates, times, locations</p>
+            <div class="main-content">
+                <h2>Exam Schedule</h2>
+                <table class="large-rows">
+                    <tr>
+                        <td>Course</td>
+                        <td>Room</td>
+                        <td>Date</td>
+                        <td>Start Time</td>
+                    </tr>
+                    <tr>
+                        <td>IASC 1P95</td>
+                        <td><a href="#" data-toggle="popover" data-trigger="hover" data-content="Ian D. Beddis Gym - Walker Complex">WCIBDS</a></td>
+                        <td>13 April</td>
+                        <td>13:00</td>
+                    </tr>
+                    <tr>
+                        <td>COSC 3P13</td>
+                        <td><a href="#" data-toggle="popover" data-trigger="hover" data-content="Bob Davis Gymnasium - Walker Complex">WCDVIS</td>
+                        <td>15 April</td>
+                        <td>09:00</td>
+                    </tr>
+                </table>
+                <a href="http://www.brocku.ca/blogs/campus-map/">Campus Map</a>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
 </body>
 </html>
