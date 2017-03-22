@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+div#events {
+	margin-top: 20px;
+	overflow: scroll;
+}
+
+div#events .row {
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+
+div#events .col-xs-2 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	font-weight:lighter;
+	font-size: 16pt;
+	text-align: center;
+}
+
+div#events .col-xs-10 {
+	font-size: 16pt;
+}
+
+div#icon-list i {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+div#icon-list a {
+	color: #333;
+}
+
+div#icon-list a:hover {
+	text-decoration: none;
+	color: #c00;
+}
+
+#unique-id {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.rooster-teeth-carousel {
+	position: relative;
+	height: 400px; /* width scales, height does not */
+}
+
+.slide-content {
+	margin: 20px;
+	padding: 10px;
+	height: 360px;
+	border: 2px solid green;
+	overflow: hidden;
+}
+
+.rooster-teeth-carousel .row {
+	position: absolute;
+	left:5%;
+	height: 400px; 
+	width: 90%;
+	transition: transform 0.6s;
+}
+
+.rooster-teeth-carousel h3 {
+	text-align: center;
+	margin: 10px;
+}
+
+.rooster-teeth-carousel div.left-arrow {
+	left: -5px; /* ??? */
+}
+
+.rooster-teeth-carousel div.left-arrow, .rooster-teeth-carousel div.right-arrow  {
+	position: absolute;
+	height: 200px;
+	margin-top: 100px;
+	padding-top: 95px;
+	width:5%;
+	text-align: center;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.rooster-teeth-carousel .right-arrow {
+	right:0;
+}
+
+/* set the default positions for the slides */
+.rooster-teeth-carousel .slide-2 {
+	left: 95%;
+}
+
+.rooster-teeth-carousel .rooster-indicator {
+	list-style: none;
+	position: absolute;
+	right: calc(50% - 38px); /* not actually centered, hopefully close enough */
+	bottom: -10px; /* ? */
+	z-index: 5;
+}
+
+.rooster-teeth-carousel .rooster-indicator li {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border: 2px solid black;
+	border-radius: 100%;
+	margin: 0px 1px 0px 1px;
+}
+
+.rooster-teeth-carousel .rooster-indicator li.active, .rooster-teeth-carousel .rooster-indicator li:hover {
+	background-color: black;
+}
+
+.rooster-teeth-carousel .slide-3 {
+	left: 185%;
+}
+
+
+
