@@ -14,6 +14,7 @@
 
 div#events {
 	margin-top: 20px;
+	overflow: scroll;
 }
 
 div#events .row {
@@ -39,8 +40,18 @@ div#icon-list i {
 	padding-top: 20px;
 }
 
+div#icon-list a {
+	color: #333;
+}
+
+div#icon-list a:hover {
+	text-decoration: none;
+	color: #c00;
+}
+
 #unique-id {
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 .rooster-teeth-carousel {
@@ -53,6 +64,7 @@ div#icon-list i {
 	padding: 10px;
 	height: 360px;
 	border: 2px solid green;
+	overflow: hidden;
 }
 
 .rooster-teeth-carousel .row {
@@ -68,10 +80,15 @@ div#icon-list i {
 	margin: 10px;
 }
 
+.rooster-teeth-carousel div.left-arrow {
+	left: -5px; /* ??? */
+}
+
 .rooster-teeth-carousel div.left-arrow, .rooster-teeth-carousel div.right-arrow  {
 	position: absolute;
-	height: 400px;
-	padding-top: 200px;
+	height: 200px;
+	margin-top: 100px;
+	padding-top: 95px;
 	width:5%;
 	text-align: center;
 	z-index: 5;

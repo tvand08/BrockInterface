@@ -21,6 +21,8 @@
   $(document).ready(function(){
     current = parseInt($('#unique-id .active').attr('data-slide-to'));
 
+    $("#events").css('height',$("#icon-list").height());
+
     $("#unique-id li[data-target='#unique-id']").click(function(){
       use_indicators('#unique-id',parseInt($(this).attr('data-slide-to')));
     });
@@ -148,20 +150,91 @@
         <div class="col-xs-12 col-md-4 col-md-push-8 hidden-sm">
 
             <div id="icon-list">
-                <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-youtube fa-4x" aria-hidden="true"></i>
+                <a href="https://www.snapchat.com/add/brockuni"><i class="fa fa-snapchat fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.flickr.com/photos/brockuniversity"><i class="fa fa-flickr fa-4x" aria-hidden="true"></i></a>
+                <a href="http://www.weibo.com/brocku"><i class="fa fa-weibo fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/brockuniversity/"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/BrockUniversity"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/brockuniversity/?hl=en"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/edu/brock-university-10836"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/user/brockuvideo"><i class="fa fa-youtube fa-4x" aria-hidden="true"></i></a>
             </div>
 
         </div>
         <div class="col-md-1 col-xs-0"></div>
         <div class="col-xs-12 col-md-7 col-md-pull-4">
 
-            <h2>Upcoming Events</h2>
+            
 
             <div id="events">
+                <h2>Upcoming Events</h2>
+
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Mar 23</p>
+                    </div>
+                    <div class="col-xs-10" data-toggle="collapse" data-target="#mar23">
+                        <a href="#" onclick="return false;">CompSci loses it's mind</a>
+                        <div class="collapse" id="mar23">
+                            <p>When: Midnight</p>
+                            <p>Where: Everywhere</p>
+                            <p>Too much homework may result in fatal conditions. It is advisable to stay indoors unless you are one of the poor souls affected. Nothing can save you. Make peace with your god.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 1</p>
+                    </div>
+                    <div class="col-xs-10" data-toggle="collapse" data-target="#apr1">
+                        <a href="#" onclick="return false;">Celebrate Spring at the Campus-wide Bear Dance</a>
+                        <div class="collapse" id="apr1">
+                            <p>When: 9:00 AM</p>
+                            <p>Where: The Woods</p>
+                            <p>Bear down for Bear dance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 2</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">Annual Peace and Reconciliation Commission with Bears</a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 7</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">Deoderant Smack-Down: Man-On-The-Street talks to Prospective Undergrads about Hygiene</a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 10</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">Four Tops Cover Band</a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 12</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">Sixteen Candles: Does Nostalgia Make Up For Sexism?</a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 12</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">Mandatory Tough Mudder</a>
+                    </div>
+                </div>
                 <div class="row no-gutter">
                     <div class="col-xs-2">
                         <p>Apr 18</p>
@@ -176,6 +249,14 @@
                     </div>
                     <div class="col-xs-10">
                         <a href="#">Cookie Monster in Retrospective (service by Big Bird)</a>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-xs-2">
+                        <p>Apr 24</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#">2-for-1 at the Beer Store</a>
                     </div>
                 </div>
             </div>
@@ -196,8 +277,9 @@
                 </ol>
 
                 <!-- navigation arrows -->
-                <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
                 <div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
+                <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                
 
                 <!-- first slide -->
                 <div class="row slide-1 no-gutters">
@@ -262,7 +344,8 @@
                 </div>
             </div>
 
-            <h2>Parking locations, directions (contact us)</h2>
+            <h2>Parking</h2>
+            <p>locations, directions (contact us)</p>
         </div>
         <div class="col-md-1 col-xs-0"></div>
     </div>
