@@ -266,10 +266,31 @@ div.col-sm-3.col-md-3.pull-right{
     background-color: #f9d9d9;
 }
 #bus-schedule{
-    border: solid;
+    border: solid 5px;
+
 }
 
 .divide{
     border-bottom: solid;
     margin-bottom: 5px;
+}
+#bus-inside{
+    overflow: scroll;
+    height: 200px;
+}
+
+.table-fixed thead {
+    width: 97%;
+}
+.table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+    float: left;
+    border-bottom-width: 0;
 }
