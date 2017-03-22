@@ -131,7 +131,7 @@ Footer Styling
     margin-left: 0px;
     margin-top: 30px;
 }
-#footer > div > .footer-address>  p{
+ .footer-address> p{
     color: whitesmoke;
     font-family: "Trebuchet MS";
     padding-left: 5%;
@@ -140,7 +140,25 @@ Footer Styling
 #footer >div {
    padding-top: 10px;
 }
+#quickLinks >ul>  li{
+    list-style-type: none;
+    display: inline;
+    color: whitesmoke;
+    font-family: "Trebuchet MS";
+    letter-spacing: 1px;
+    font-size:15px;
 
+}#quickLinks >ul>  li >a{
+    color: whitesmoke;
+}
+ #quickLinks{
+     margin-bottom: 40px;
+ }
+
+#quickLinks > ul > li:not(:first-child):before {
+    font-weight: 100;
+    content: " | ";
+}
 
 #page-title{
     font-family: "Trebuchet MS";
