@@ -12,9 +12,6 @@
     <script src="scripts/main.js"></script>
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
     <script src="snowstorm.js" type="text/javascript"></script>
-    <script>
-        snowStorm.flakesMaxActive = 150;
-    </script>
 
 </head>
 <body>
@@ -314,6 +311,11 @@
     </div>
 </div>
 </div>
+<script>
+    snowStorm.flakesMaxActive = 150;
+    snowStorm.followMouse=false;
+</script>
+
 <script>
     function letItSnow(){
         snowStorm.stop();
