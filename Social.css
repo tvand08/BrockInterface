@@ -16,12 +16,21 @@
 	padding-top: 20px;
 }
 
+#page-title {
+	margin-bottom: 0;
+}
+
 div#events {
+	position: relative;
 	margin-top: 20px;
-	overflow: scroll;
-	overflow-x: hidden;
 	border: 1px solid #6a747b;
 	border-radius: 3px;
+}
+
+.event-scroll {
+	position: relative;	
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 div#events h2 {
@@ -58,7 +67,38 @@ div#icon-list a {
 
 div#icon-list a:hover {
 	text-decoration: none;
-	color: #c00;
+}
+
+div#icon-list a:hover .fa-snapchat {
+	color: #fffb01;
+}
+
+div#icon-list a:hover .fa-flickr {
+	color: #0063db
+}
+
+div#icon-list a:hover .fa-weibo {
+	color: #e6162d
+}
+
+div#icon-list a:hover .fa-facebook {
+	color: #3b579d
+}
+
+div#icon-list a:hover .fa-twitter {
+	color: #09a1ec
+}
+
+div#icon-list a:hover .fa-instagram {
+	color: #c00
+}
+
+div#icon-list a:hover .fa-linkedin {
+	color: #225982
+}
+
+div#icon-list a:hover .fa-youtube {
+	color: #c12025
 }
 
 #unique-id {
@@ -76,7 +116,7 @@ div#icon-list a:hover {
 	margin: 20px;
 	padding: 10px;
 	height: 360px;
-	border: 2px solid green;
+	border: 2px solid #6a747b;
 	overflow: hidden;
 }
 

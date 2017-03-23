@@ -23,7 +23,12 @@
   $(document).ready(function(){
     current = parseInt($('#unique-id .active').attr('data-slide-to'));
 
+    /* 43 */
+    /*alert($("#events h2").height() + 10); */
+
     $("#events").css('height',$("#icon-list").height());
+    var sub_height = $("#icon-list").height() - $("#events h2").height() - 42;
+    $(".event-scroll").css('height',sub_height + 'px');
 
     $("#unique-id li[data-target='#unique-id']").click(function(){
       use_indicators('#unique-id',parseInt($(this).attr('data-slide-to')));
@@ -148,6 +153,91 @@
         </div>
     </div>
 
+    <div  class="row">
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-10 col-xs-12" id="news">
+
+            <h2>News</h2>
+            <div id="unique-id" class="rooster-teeth-carousel col-xs-12">
+                
+
+                <ol class="rooster-indicator">
+                  <li data-target="#unique-id" data-slide-to="1" class="active"></li>
+                  <li data-target="#unique-id" data-slide-to="2"></li>
+                  <li data-target="#unique-id" data-slide-to="3"></li>
+                </ol>
+
+                <!-- navigation arrows -->
+                <div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
+                <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                
+
+                <!-- first slide -->
+                <div class="row slide-1 no-gutters">
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Banana</h3>
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Apple</h3>
+                            <p>Any content can go in here</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="slide-content">
+                            <h3>Pear</h3>
+                            <img src="Branding/Brock-Icon.png">
+                            <a href="https://www.wikipedia.org/"><p>Wikipedia</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second slide -->
+                <div class="row slide-2 no-gutters">
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Orange</h3>
+                            <p>This slide has four columns</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Kiwi</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Lime</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="slide-content">
+                            <h3>Mango</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third slide -->
+                <div class="row slide-3 no-gutters">
+                    <div class="col-xs-5">
+                        <div class="slide-content">
+                            <h3>Coconut</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="slide-content">
+                            <h3>Papaya</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-xs-0"></div>
+    </div>
+
     <div class="row">
         <div class="col-xs-12 col-md-4 col-md-push-8 hidden-sm">
 
@@ -171,6 +261,7 @@
             <div id="events">
                 <h2>Upcoming Events</h2>
 
+                <div class="event-scroll">
                 <div class="row no-gutter">
                     <div class="col-xs-2">
                         <p>Mar 23</p>
@@ -262,98 +353,19 @@
                     </div>
                 </div>
             </div>
+            </div>
 
         </div>
     </div>
 
-    <div  class="row">
+    <div class="row">
         <div class="col-md-1 col-xs-0"></div>
-        <div class="col-md-10 col-xs-12" id="news">
-
-            <h2>News</h2>
-            <div id="unique-id" class="rooster-teeth-carousel col-xs-12">
-            	
-
-                <ol class="rooster-indicator">
-                  <li data-target="#unique-id" data-slide-to="1" class="active"></li>
-                  <li data-target="#unique-id" data-slide-to="2"></li>
-                  <li data-target="#unique-id" data-slide-to="3"></li>
-                </ol>
-
-                <!-- navigation arrows -->
-                <div class="left-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
-                <div class="right-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
-                
-
-                <!-- first slide -->
-                <div class="row slide-1 no-gutters">
-                    <div class="col-xs-4">
-                        <div class="slide-content">
-                            <h3>Banana</h3>
-                            <p>Hello World</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="slide-content">
-                            <h3>Apple</h3>
-                            <p>Any content can go in here</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="slide-content">
-                            <h3>Pear</h3>
-                            <img src="Branding/Brock-Icon.png">
-                            <a href="https://www.wikipedia.org/"><p>Wikipedia</p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second slide -->
-                <div class="row slide-2 no-gutters">
-                    <div class="col-xs-3">
-                        <div class="slide-content">
-                            <h3>Orange</h3>
-                            <p>This slide has four columns</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="slide-content">
-                            <h3>Kiwi</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="slide-content">
-                            <h3>Lime</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="slide-content">
-                            <h3>Mango</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- third slide -->
-                <div class="row slide-3 no-gutters">
-                    <div class="col-xs-5">
-                        <div class="slide-content">
-                            <h3>Coconut</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-7">
-                        <div class="slide-content">
-                            <h3>Papaya</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="col-md-10 col-xs-12">
             <h2>Parking</h2>
             <p>locations, directions (contact us)</p>
         </div>
         <div class="col-md-1 col-xs-0"></div>
     </div>
-
 
  </div>
         <!--Begin Footer-->
