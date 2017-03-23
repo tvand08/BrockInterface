@@ -152,9 +152,19 @@ div#icon-list a:hover .fa-youtube {
 	right:0;
 }
 
+.slide-content img {
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
 /* set the default positions for the slides */
 .rooster-teeth-carousel .slide-2 {
 	left: 95%;
+}
+
+.slide-content img {
+	max-width: 90%;
 }
 
 .rooster-teeth-carousel .rooster-indicator {
