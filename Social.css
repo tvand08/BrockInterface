@@ -1,4 +1,4 @@
-* {
+ * {
 	box-sizing: border-box;
 }
 
@@ -69,7 +69,7 @@ div#icon-list a:hover {
 
 .rooster-teeth-carousel {
 	position: relative;
-	height: 400px; /* width scales, height does not */
+	height: 100%; /* width scales, height does not */
 }
 
 .slide-content {
