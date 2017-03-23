@@ -246,6 +246,7 @@ Footer Styling
      padding-top: 20px;
      padding-bottom: 20px;
      margin: 0px;
+    border: solid thin black;
      text-decoration: none;
     box-shadow: 5px 5px #D1D3D4;
     transition: background-color 0.5s ease, margin 0.5s ease, box-shadow 0.5s ease;
@@ -445,4 +446,57 @@ The following Css is for the latest news object
 #sepHeader{
     font-family: "Trebuchet MS";
     margin-left:10px;
+    color: #cc0000;
+}
+.toggle-button{
+    margin: 10px;
+
+}
+.toggle-button > a{
+    background-color: #cc0000;
+    color: whitesmoke;
+    padding: 10px;
+}
+.toggle-button:hover >a {
+    text-decoration: none;
+}
+
+.resource-box{
+    background-color: #dddddd;
+    border: solid #9d9d9d;
+    margin: 15px;
+}
+.resource-box >h2{
+    font-family: "Trebuchet MS";
+    padding-bottom: 10px;
+}
+.resource-box > div > a{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+.resource-box > div > a> i{
+    padding-left: 8px;
+}
+
+
+.resource-box>div > ul{
+    padding-left: 40%;
+    font-size: larger;
+    font-family: "Trebuchet MS";
+    color: #cc0000;
+}
+
+.resource-box>div > ul> li >a{
+    font-family: "Trebuchet MS";
+    color: #cc0000;
+}
+.resource-box>div > ul> li {
+    padding-bottom: 5px;
+}
+.resource-box >i{
+    margin-left: 44%;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #cc0000;
+    border-radius: 100px;
 }
