@@ -6,6 +6,10 @@
 	color: black;
 }
 
+.main-content {
+	margin-top: 0;
+}
+
 .main-content a:hover, .main-content a:hover h4 {
 	text-decoration: none;
 	color: #c00;
