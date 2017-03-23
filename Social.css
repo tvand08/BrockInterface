@@ -62,6 +62,7 @@ div#icon-list a:hover {
 }
 
 #unique-id {
+	height: 400px;
 	overflow: hidden;
 	margin-bottom: 20px;
 	height: 30%;
