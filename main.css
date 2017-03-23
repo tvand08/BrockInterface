@@ -263,11 +263,11 @@ Footer Styling
 }
 #current-blurb{
     font-family: "Trebuchet MS";
-    font-weight: 800;
-    font-size: 30px;
-    color: #6A747b;
-    padding-right: 0px;
-    paddding-left:0px;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    padding-right: 15%;
+    paddding-left:15%;
     margin-top: 30px;
 
 
