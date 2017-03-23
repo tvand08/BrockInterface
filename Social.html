@@ -23,8 +23,7 @@
   $(document).ready(function(){
     current = parseInt($('#unique-id .active').attr('data-slide-to'));
 
-    /* 43 */
-    /*alert($("#events h2").height() + 10); */
+    $("[data-toggle=tooltip]").tooltip();
 
     $("#events").css('height',$("#icon-list").height());
     var sub_height = $("#icon-list").height() - $("#events h2").height() - 42;
@@ -245,17 +244,25 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12 col-md-4 col-md-push-8 hidden-sm">
+        <div class="col-xs-12 col-md-4 col-md-push-8"> <!-- hidden-sm -->
 
             <div id="icon-list">
-                <a href="https://www.snapchat.com/add/brockuni"><i class="fa fa-snapchat fa-4x" aria-hidden="true"></i></a>
-                <a href="https://www.flickr.com/photos/brockuniversity"><i class="fa fa-flickr fa-4x" aria-hidden="true"></i></a>
-                <a href="http://www.weibo.com/brocku"><i class="fa fa-weibo fa-4x" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/brockuniversity/"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/BrockUniversity"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/brockuniversity/?hl=en"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/edu/brock-university-10836"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/user/brockuvideo"><i class="fa fa-youtube fa-4x" aria-hidden="true"></i></a>
+                <a href="https://www.snapchat.com/add/brockuni" >
+                <i class="fa fa-snapchat fa-4x" aria-hidden="true" data-toggle="tooltip" title="Snapchat" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://www.flickr.com/photos/brockuniversity">
+                <i class="fa fa-flickr fa-4x" aria-hidden="true" data-toggle="tooltip" title="Flickr" data-placement="left" data-trigger="hover"></i></a>
+                <a href="http://www.weibo.com/brocku">
+                <i class="fa fa-weibo fa-4x" aria-hidden="true" data-toggle="tooltip" title="Weibo" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://www.facebook.com/brockuniversity/">
+                <i class="fa fa-facebook fa-4x" aria-hidden="true" data-toggle="tooltip" title="Facebook" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://twitter.com/BrockUniversity">
+                <i class="fa fa-twitter fa-4x" aria-hidden="true" data-toggle="tooltip" title="Twitter" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://www.instagram.com/brockuniversity/?hl=en">
+                <i class="fa fa-instagram fa-4x" aria-hidden="true" data-toggle="tooltip" title="Instagram" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://www.linkedin.com/edu/brock-university-10836">
+                <i class="fa fa-linkedin fa-4x" aria-hidden="true" data-toggle="tooltip" title="LinkedIn" data-placement="left" data-trigger="hover"></i></a>
+                <a href="https://www.youtube.com/user/brockuvideo">
+                <i class="fa fa-youtube fa-4x" aria-hidden="true" data-toggle="tooltip" title="YouTube" data-placement="left" data-trigger="hover"></i></a>
             </div>
 
         </div>
@@ -414,5 +421,14 @@
                 </div>
             </div>
         </div>
+
+   	<script>
+	/*$(function () {
+	  	$('[data-toggle="tooltip"]').tooltip()
+	})
+	$("[data-toggle=tooltip]").hover(function(){
+	$('.tooltip').css('top',parseInt($('.tooltip').css('top')) + 15 + 'px')
+	});*/
+	</script>
 </body>
 </html>
