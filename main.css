@@ -437,6 +437,12 @@ The following Css is for the latest news object
 }
 .seperator > a > h4:nth-child(1){
     color:black;
-}.seperator > a > h4:nth-child(2){
+}
+.seperator > a > h4:nth-child(2){
     color: #cc0000;
+}
+
+#sepHeader{
+    font-family: "Trebuchet MS";
+    margin-left:10px;
 }

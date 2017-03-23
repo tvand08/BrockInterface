@@ -44,5 +44,12 @@ function snackbar() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
-
+function update(letter){
+    var x = document.getElementById("calendar");
+     $(x).empty();
+     $(x).append("<div class='program-list'><h3>A</h3><ul><li><a href=''>Aboriginal Studies</a></li>" +
+         "<li><a href=''>Accounting</a></li><li><a href=''>Apple Picking</a></li><li><a href=''>Applied Linguistic</a>" +
+         "</li><li><a href=''>Aquaponics</a></li></ul></div>"
+)
+}
 
