@@ -17,6 +17,20 @@ i{
 i:hover{
     color: #9d9d9d;
 }
+
+#signOut{
+    float: right;
+    padding: 10px;
+}
+#signOut >i{
+    background-color: #dddddd;
+    border: solid black;
+    padding-left: 16px;
+}
+#signOut >i:hover{
+    background-color: whitesmoke;
+    border: solid #cc0000;
+}
 .Logo {
     margin-top: 20px;
     margin-left: 20px;
@@ -39,6 +53,76 @@ i:hover{
 #name{
     color: #c00;
 }
+
+#welcome{
+
+}
+#welcome >h1{
+    color: red;
+    font-family: "Trebuchet MS";
+}
+.hotBox{
+    border-radius: 5px;
+    border: solid thick black;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+.hotBox > h2{
+    font-family: "Trebuchet MS";
+    font-size: 40px;
+text-decoration: underline;
+}
+.hotLink{
+
+    padding: 10px;
+}
+.hotLink > a{
+    width: 50%;
+    heigh: 80%;
+    background-color: #cc0000;
+    color: whitesmoke;
+}
+.hotLink >a:hover{
+    text-decoration: none;
+
+}
+.inner:hover{
+    background-color: whitesmoke;
+    transition: background-color 0.35s ease;
+}
+.inner:hover > h2  {
+    color: #cc0000;
+    transition: color 0.35s ease;
+}
+
+.inner {
+    background-color: #cc0000;
+    transition: background-color 0.35s ease;
+    width: 60%;
+    border-radius: 5px;
+}
+.inner > h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    transition: color 0.35s ease;
+
+}
+
+#niceList{
+    color: #cc0000;
+    align-content: center;
+    list-style: none;
+}
+#niceList > li >a{
+
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    color: #cc0000;
+}
+
+
+
 .exam >div > h3{
     display: inline-flex;
     margin: 4px;
