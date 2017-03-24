@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program List</title>
+    <link rel="icon" href="../Branding/Brock-Icon.png">
+    
+    <script src="../scripts/main.js"></script>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" >
+    <link rel="stylesheet" href="../main.css" type="text/css" >
+    <link rel="stylesheet" href="program_list.css" type="text/css">
+
+    <script src="persistent.js"></script>
+
+    <script>
+    /* http://stackoverflow.com/questions/15364298/select-element-by-exact-match-of-its-content */
+    $(document).ready(function(){
+        $("#alpha-buttons li").filter(function() {
+            return $(this).text() === "All";
+        }).css('border-color','#c00');
+    });
+    </script>
+</head>
+<body>
+
+<div id ="header" class="container-fluid center-block header">
+    <img class ="Logo" src="../Branding/Brock_University_Logo.png" height="">
+</div>
+
+<!-- Navbar Begins -->
+<nav class=" navbar navbar-default ">
+    <div class = "navbar-nav ">
+        <button type = "button" class = "navbar-toggle"
+                data-toggle = "collapse" data-target = "#collapsable">
+            <span class = "sr-only">Toggle navigation</span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+        </button>
+        <h1 id="nav-collapsed" class="text-center visible-xs">Current Students</h1>
+    </div>
+
+    <div class="collapse navbar-collapse" id="collapsable">
+
+
+        <ul class="nav navbar-nav visible-xs text-center">
+            <li id ="mobile-nav" ><a href="../index.html">Home</a></li>
+            <li  ><a href="../Future_Students.html">Future Students</a></li>
+            <li class="active"><a href="../Current_Students.html">Current Students</a></li>
+            <li ><a href="../Faculty.html">Faculty</a></li>
+            <li ><a href="../Social.html">Social</a></li>
+            <li ><a href="../Campus.html">Campus Resources</a></li>
+        </ul>
+        <ul id = "small-nav" class="nav navbar-nav visible-sm ">
+            <li ><a href="../index.html">Home</a></li>
+            <li ><a href="../Future_Students.html">Future Students</a></li>
+            <li class="active"><a href="../Current_Students.html">Current Students</a></li>
+            <li ><a href="../Faculty.html">Faculty</a></li>
+            <li ><a href="../Social.html">Social</a></li>
+            <li ><a href="../Campus.html">Campus Resources</a></li>
+        </ul>
+        <ul id = "medium-nav" class="nav navbar-nav visible-md ">
+            <li ><a href="../index.html">Home</a></li>
+            <li ><a href="../Future_Students.html">Future Students</a></li>
+            <li class="active"><a href="../Current_Students.html">Current Students</a></li>
+            <li ><a href="../Faculty.html">Faculty</a></li>
+            <li ><a href="../Social.html">Social</a></li>
+            <li ><a href="../Campus.html">Campus Resources</a></li>
+        </ul>
+        <ul id="large-nav" class="nav navbar-nav visible-lg ">
+            <li ><a href="../index.html">Home</a></li>
+            <li ><a href="../Future_Students.html">Future Students</a></li>
+            <li class="active" ><a href="../Current_Students.html">Current Students</a></li>
+            <li ><a href="../Faculty.html">Faculty</a></li>
+            <li ><a href="../Social.html">Social</a></li>
+            <li ><a href="../Campus.html">Campus Resources</a></li>
+        </ul>
+        <div class="visible-lg   col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" style="padding-bottom: 7px;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Navbar ends -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-xs-0"></div>
+        <div class="col-md-8 col-xs-12 main-content">
+            <h2>Programs</h2>
+            <p><a href="#">link to departments list?</a></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="faculty-list">Filter by Faculty:</label>
+                            <select class="form-control" id="faculty-list">
+                                <option value="1">All</option>
+                                <option value="2">Applied Health Science</option>
+                                <option value="3">Education</option>
+                                <option value="4">Humanities</option>
+                                <option value="5">Mathematics and Science</option>
+                                <option value="6">Goodman School of Business</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="degree-list">Filter by Degree:</label>
+                            <select class="form-control" id="degree-list">
+                                <option value="1">All</option>
+                                <option value="2">Arts</option>
+                                <option value="3">Business Administration</option>
+                                <option value="4">Early Childhood Education</option>
+                                <option value="5">Recreation and Lesiure Studies</option>
+                                <option value="6">Science</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <ul id="alpha-buttons">
+                <!-- stuff will go here -->
+            </ul>
+
+            <div class="program-list">
+                <h3>A</h3>
+                <ul>
+                    <li><a href="#">Aboriginal Studies</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Apple Picking</a></li>
+                    <li><a href="#">Applied Linguistics</a></li>
+                    <li><a href="#">Aquaponics</a></li>
+                </ul>
+                <h3>B</h3>
+                <ul>
+                    <li><a href="#">Basket Weaving</a></li>
+                    <li><a href="#">Biochemistry</a></li>
+                    <li><a href="#">Biomedical Sciences</a></li>
+                    <li><a href="#">Business Communication</a></li>
+                </ul>
+                <h3>C</h3>
+                <ul>
+                    <li><a href="#">Child Health</a></li>
+                    <li><a href="#">Classics</a></li>
+                    <li><a href="#">Concurrent Education</a></li>
+                </ul>
+                <h3>D</h3>
+                <ul>
+                    <li><a href="#">Demolition Expert</a></li>
+                    <li><a href="#">Developmental Pie-ology</a></li>
+                    <li><a href="#">Dinklage Appreciation</a></li>
+                    <li><a href="#">Donut Hole Planning</a></li>
+                </ul>
+                <h3>E</h3>
+                <ul>
+                    <li><a href="#">Endocrinology</a></li>
+                    <li><a href="#">Elephant Trainer</a></li>
+                </ul>
+                <h3>F</h3>
+                <p>...</p>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-0"></div>
+    </div>
+</div>
+
+<<div id="footer">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div id="quickLinks" class="col-lg-12 ">
+                <ul>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Campus Map</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="footer-address col-lg-8 col-sm-12">
+                <p>©&nbsp;2017&nbsp;Brock University /
+                    Niagara&nbsp;Region /
+                    1812&nbsp;Sir&nbsp;Isaac&nbsp;Brock&nbsp;Way /
+                    St.&nbsp;Catharines,&nbsp;ON,&nbsp;L2S&nbsp;3A1&nbsp;Canada /
+                    +1&nbsp;905&#8209;688&#8209;5550
+                </p>
+            </div>
+            <div id = "social-media"class="col-lg-4">
+                <a href="https://www.facebook.com/brockuniversity/"><i class="fa fa-4x fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/BrockUniversity/"><i class="fa fa-4x fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/brockuniversity/"><i class="fa fa-4x fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/school/14912?pathWildcard=14912"><i class="fa fa-4x fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-4x fa-youtube" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <img src="../Branding/Brock_University_Logo.png" width = "40%">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -6366,13 +6366,13 @@ button.close {
 }
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
+  left: 30%;
+  margin-left: -5px;
 }
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
+  right: 30%;
+  margin-right: -5px;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next {

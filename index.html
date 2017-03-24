@@ -7,10 +7,11 @@
     <link rel="icon" href="Branding/Brock-Icon.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" >
     <link rel="stylesheet" href="main.css" type="text/css" >
-    <script src="scripts/jquery-3.1.1%20(1).js"></script>
+    <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.css">    <script src="scripts/jquery-3.1.1%20(1).js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="scripts/main.js"></script>
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="snowstorm.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -74,7 +75,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
                     <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        <button class="btn btn-default" style="padding-bottom: 7px;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
                 </div>
             </form>
@@ -97,15 +98,23 @@
         <div class="carousel-inner" role="listbox">
                 <div class="item item-home active ">
                     <img src="Branding/brock_dusk_shot_cropped.jpg" alt="Dusk">
-                    <h2>Welcome To Brock!</h2>
+                    <h2 class="visible-lg">Welcome<br> To Brock<br> University!</h2>
+                    <h3 class="visible-md ">Welcome<br> To Brock<br> University!</h3>
+                    <h4 class="visible-sm ">Welcome<br> To Brock<br> University!</h4>
                 </div>
 
                 <div class="item item-home">
-                    <img src="Branding/WalkerComplex_cropped.jpg" alt="Walker Complex">
+                    <img src="Branding/WalkerComplex_cropped.jpg" alt="Walker Complex"/>
+                    <h2 class="visible-lg">Winter Exams<br> Begin<br> April 11</h2>
+                    <h3 class="visible-md ">Winter Exams<br> Begin<br> April 11</h3>
+                    <h4 class="visible-sm  ">Winter Exams<br> Begin<br> April 11</h4>
                 </div>
 
                 <div class="item item-home">
-                    <img src="Branding/Brock_Cairns_Cropped.jpg" alt="Cairns">
+                    <img src="Branding/Brock-Market_Cropped.jpg" alt="Market">
+                    <h2 class="visible-lg">Spring/Summer<br> Registration<br> Open Now</h2>
+                    <h3 class=" visible-md ">Spring/Summer<br> Registration<br> Open Now</h3>
+                    <h4 class=" visible-sm ">Spring/Summer<br> Registration<br> Open Now</h4>
                 </div>
             </div>
 
@@ -121,20 +130,196 @@
         </a>
     </div>
 </div>
+
+
+<div id ="university-status">
+    <i class="fa fa-exclamation-triangle fa-5x " onmouseover="  snackbar(), letItSnow()" ></i>
+</div>
+
+<div id="snackbar">Brock University Is Currently Closed Due To Inclement Weather</div>
+
 <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>
+                    Brock UPass Bus Schedule
+                </h4>
+            </div>
+            <table class="table table-fixed">
+                <thead>
+                <tr>
+                    <th class="col-xs-4">System</th><th class="col-xs-1">Bus</th><th style="text-align: center" class="col-xs-2">Departure</th><th style = "text-align: center" class="col-xs-3">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="col-xs-4">Welland</td><td class="col-xs-2">431</td><td class="col-xs-2">8:00</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Niagara Falls</td><td class="col-xs-2">165</td><td class="col-xs-2">9:30</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">St. Catharines</td><td class="col-xs-2">404</td><td class="col-xs-2">10:15</td><td class="col-xs-3">Delayed</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Niagara Falls</td><td class="col-xs-2">210</td><td class="col-xs-2">10:58</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">St. Catharines</td><td class="col-xs-2">415</td><td class="col-xs-2">11:27</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Welland</td><td class="col-xs-2">150</td><td class="col-xs-2">12:42</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Niagara Falls</td><td class="col-xs-2">601</td><td class="col-xs-2">13:55</td><td class="col-xs-3">Delayed</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Niagara Falls</td><td class="col-xs-2">512</td><td class="col-xs-2">14:48</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">St. Catharines</td><td class="col-xs-2">851</td><td class="col-xs-2">15:12</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">Welland</td><td class="col-xs-2">123</td><td class="col-xs-2">16:44</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">St. Catharines</td><td class="col-xs-2">456</td><td class="col-xs-2">17:00</td><td class="col-xs-3">On Time</td>
+                </tr>
+                <tr>
+                    <td class="col-xs-4">St. Catharines</td><td class="col-xs-2">789</td><td class="col-xs-2">21:22</td><td class="col-xs-3">On Time</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+        <div  class="col-lg-4 col-xs-12">
+            <h3 class="latestNewsHeader">Latest News</h3>
+            <div class="latestNewsBody">
+                <div class="seperator">
+                    <a href = "">
+                        <h4>February 26, 2017</h4>
+                        <h4>Brock Computer Science Department Wins Noble Peace Prize</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>February 29, 2017</h4>
+                        <h4>Brock University Gets a Website Facelift</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>March 17, 2017</h4>
+                        <h4>Researchers discover better keyboard layout</h4></a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>March 20, 2017</h4>
+                        <h4>Brock University Gets a Website Facelift</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>March 22, 2017</h4>
+                        <h4>Brock University Gets a Website Facelift</h4>
+                    </a>
+                </div>
+                </div>
+        </div>
+
+        <div  class="col-lg-4 col-xs-12">
+            <h3 class="latestNewsHeader">Upcoming Events</h3>
+            <div class="latestNewsBody">
+                <div class="seperator">
+                    <a href = "">
+                        <h4>March 23, 2017</h4>
+                        <h4>CompSci Loses it's mind</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>March 29, 2017</h4>
+                        <h4>Trevor's Birthday</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>April 1, 2017</h4>
+                        <h4>International day of Pranks</h4>
+                    </a>
+                </div>
+                <div class="seperator">
+                    <a href="" >
+                        <h4>April 5, 2017</h4>
+                        <h4>Boomer the Badger Meet and Greet</h4>
+                    </a>
+                </div>
+                <div  class="seperator">
+
+                    <a href="" >
+                        <h4>April 7, 2017</h4>
+                        <h4>Last Day of Winter Classes</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
 
-<div id="footer" class="row">
-    <div class="col-lg-9 col-sm-12">
-        <p>© 2017 Brock University /
-            Niagara Region /
-            1812 Sir Isaac Brock Way /
-            St. Catharines, ON, L2S 3A1 Canada /
-            +1 905-688-5550
-        </p>
+<div id="footer">
+    <div class="container-fluid">
+    <div class="row text-center">
+        <div id="quickLinks" class="col-lg-12 ">
+            <ul>
+                <li><a href="">Accessibility</a></li>
+                <li><a href="">Campus Map</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Feedback</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="footer-address col-lg-8 col-sm-12">
+            <p>©&nbsp;2017&nbsp;Brock University /
+                Niagara&nbsp;Region /
+                1812&nbsp;Sir&nbsp;Isaac&nbsp;Brock&nbsp;Way /
+                St.&nbsp;Catharines,&nbsp;ON,&nbsp;L2S&nbsp;3A1&nbsp;Canada /
+                +1&nbsp;905&#8209;688&#8209;5550
+            </p>
+        </div>
+        <div id = "social-media"class="col-lg-4">
+            <a href="https://www.facebook.com/brockuniversity/"><i class="fa fa-4x fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/BrockUniversity/"><i class="fa fa-4x fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/brockuniversity/"><i class="fa fa-4x fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/school/14912?pathWildcard=14912"><i class="fa fa-4x fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-4x fa-youtube" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <img src="Branding/Brock_University_Logo.png" width = "40%">
     </div>
 </div>
+</div>
+<script>
+    snowStorm.flakesMaxActive = 150;
+    snowStorm.followMouse=false;
+</script>
 
+<script>
+    function letItSnow(){
+        snowStorm.stop();
+    }
+</script>
 </body>
 </html>

@@ -35,7 +35,7 @@
             <div class="my-brocku-nav-menu">
                 <ul>
                     <a href="program_status.html"><li>Program Status</li></a>
-                    <li style="color:#EE1D23">Grade Inquiry</li></a>
+                    <li class="current-page">Grade Inquiry</li></a>
                     <a href="index.html"><li>Course Planning and Registration</li></a>
                     <a href="exam_schedule.html"><li>Exam Schedules</li></a>
                     <a href="finances.html"><li>Finances</li></a>
@@ -44,9 +44,18 @@
             </div>
         </div>
         <div class="col-md-9">
-            <h2>Grade Inquiry</h2>
-            <p>past marks</p>
-            <p>current marks inquiry</p>
+            <div class="main-content">
+                <h2>Grade Inquiry</h2>
+                <div class="form-group">
+                    <label for="select-course">Select course:</label>
+                    <select class="form-control" id="select-course">
+                        <option>COSC 1P03</option>
+                        <option>PHIL 1F90</option>
+                        <option>IASC 2P14</option>
+                    </select>
+                    <button id="go-course">Go</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
