@@ -1,4 +1,4 @@
-body{
+#loginBody{
     background-color: #cc0000;
 }
 #login-title{
@@ -17,11 +17,89 @@ i{
 i:hover{
     color: #9d9d9d;
 }
+.Logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 120px;
+    width: auto;
+}
+#header > h1{
 
+    color: #cc0000;
+    font-family: "Trebuchet MS";
+    font-size: 60px;
+}
+#header > h2{
+    float: right;
+    font-family: "Trebuchet MS";
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+#name{
+    color: #c00;
+}
+.exam >div > h3{
+    display: inline-flex;
+    margin: 4px;
+}
+.exam >div>h2{
+    margin: 0px;
+}
+.exam{
+    overflow: auto;
+    border: solid  #6a747b;
+    border-radius: 5px;
+    height: 500px;
+}
+.exam-header{
+    background-color: #D1D3D4;
+    width: 100%;
+}
+.exam-body{
+    padding-top: 10px;
+    margin-top: 0px;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+}
 
+#footer{
+    border-top: solid 20px black;
+    background-color: #cc0000;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.footer-address> p{
+    color: whitesmoke;
+    font-family: "Trebuchet MS";
+    padding-left: 5%;
 
+}
+#footer >div {
+    padding-top: 10px;
+}
 
+#quickLinks >ul>  li{
+    list-style-type: none;
+    display: inline;
+    color: whitesmoke;
+    font-family: "Trebuchet MS";
+    letter-spacing: 1px;
+    font-size:15px;
+}
+#quickLinks >ul>  li >a{
+     color: whitesmoke;
+ }
+#quickLinks{
+    margin-bottom: 40px;
+}
 
+#quickLinks > ul > li:not(:first-child):before {
+    font-weight: 100;
+    content: " | ";
+}
 
 
 
