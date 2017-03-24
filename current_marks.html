@@ -100,71 +100,77 @@
 
     </div>
 </nav>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-3">
-            <h1>Exam Schedule</h1>
-        </div>
-            <div class="col-lg-8">
-                <div  class="exam">
-                    <div class="exam-header">
-                        <h2 class="text-center">April 17, 2017</h2>
-                    </div>
-                    <div class="exam-body">
-                        <h3>Time: 19:00-22:00</h3>
-                        <h3>Location: WCIBDS</h3>
-                        <h3>Course: COSC 2P13</h3>
-                        <h3>Description: Computer Systems</h3>
-                    </div>
 
-
-                    <div class="exam-header">
-                        <h2 class="text-center">April 19, 2017</h2>
-                    </div>
-                    <div class="exam-body">
-                        <h3>Time: 19:00-21:00</h3>
-                        <h3>Location: WCIBDS</h3>
-                        <h3>Course: COSC 3P94</h3>
-                        <h3>Description: Introduction to Human Computer Interaction</h3>
-                    </div>
-
-
-                    <div class="exam-header">
-                        <h2 class="text-center">April 20, 2017</h2>
-                    </div>
-                    <div class="exam-body">
-                        <h3>Time: 9:00-12:00</h3>
-                        <h3>Location: WCDVIS</h3>
-                        <h3>Course: MATH 1P05</h3>
-                        <h3>Description: Applied Calculus I</h3>
-                    </div>
-
-                    <div class="exam-header">
-                        <h2 class="text-center">April 22, 2017</h2>
-                    </div>
-                    <div class="exam-body">
-                        <h3>Time: 9:00-11:00</h3>
-                        <h3>Location: WCIBDS</h3>
-                        <h3>Course: COSC 3P32</h3>
-                        <h3>Description: Introduction to Database Systems</h3>
-                    </div>
-
-                    <div class="exam-header">
-                        <h2 class="text-center">April 25, 2017</h2>
-                    </div>
-                    <div class="exam-body">
-                        <h3>Time: 9:00-12:00</h3>
-                        <h3>Location: WCIBDS</h3>
-                        <h3>Course: COSC 2P05</h3>
-                        <h3>Description: Programming Languages</h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+<div class="row">
+    <div class="col-lg-3">
+        <h1>Current Marks</h1>
+        <form>
+            <select name="Course">
+                <option value="MATH 1P05">MATH 1P05</option>
+                <option value="COSC 2P05">COSC 2P05</option>
+                <option value="COSC 2P13">COSC 2P13</option>
+                <option value="COSC 3P94" selected>COSC 3P94</option>
+                <option value="COSC 3P32">COSC 3P32</option>
+            </select>
+            <input type = "button" value="Search"/>
+        </form>
+    </div>
+    <div class="col-lg-9">
+        <h2>Course: COSC 3P94</h2>
+        <table class="table-bordered table-striped table-hover">
+            <tr>
+                <th>Description</th>
+                <th>Mark</th>
+                <th>Base</th>
+                <th>Percentage</th>
+                <th>Calculated Mark</th>
+                <th>/Weight</th>
+            </tr>
+            <tr>
+                <td>Assignment 1</td>
+                <td>45.00</td>
+                <td>50.00</td>
+                <td>90.00%</td>
+                <td>9.00</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Assignment 2</td>
+                <td>40.00</td>
+                <td>50.00</td>
+                <td>80.00%</td>
+                <td>8.00</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Assignment 1</td>
+                <td>50.00</td>
+                <td>50.00</td>
+                <td>100.00%</td>
+                <td>10.00</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Midterm Exam</td>
+                <td>43.00</td>
+                <td>50.00</td>
+                <td>86.00%</td>
+                <td>8.60</td>
+                <td>30.00</td>
+            </tr>
+            <tr>
+                <td>Final Exam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>40.00</td>
+            </tr>
+        </table>
     </div>
 </div>
+
+
 <div id="footer">
     <div class="container-fluid">
         <div class="row text-center">
@@ -197,5 +203,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
