@@ -13,6 +13,39 @@
     <script src="scripts/main.js"></script>
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
 
+    <link rel="stylesheet" href="Future_Students.css" type="text/css" >
+
+    <script>
+    $( document ).ready(function() {
+        /* https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2 */
+        $('a.smooth-scroll').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+
+        position_side_nav();
+
+        $(window).scroll(function(){
+            position_side_nav();
+        });
+
+        function position_side_nav () {
+            if ($(window).scrollTop() <= 140) {
+                $("#side-nav").css('position', 'absolute').css('top','220px');
+            } else if ($(window).scrollTop() >= 1150) {  // change target to number
+                $("#side-nav").css('position', 'absolute').css('top','1230px');
+            } else {
+                $("#side-nav").css('position', 'fixed').css('top','');
+            }
+        }
+    });
+    </script>
+
 </head>
 <body>
         <div id ="header" class="visible-md visible-lg visible-sm container-fluid center-block header">
@@ -139,40 +172,92 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row no-gutters">
-        <div class="col-xs-12">
+
+
+<div class="container-fluid">
+    
+        <div class="row no-gutters visible-lg">
+            <div id="side-nav">
+                <div class="col-lg-1">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li role="presentation"><a href="#header" class="smooth-scroll">Top</a></li>
+                      <li role="presentation"><a href="#open-house" class="smooth-scroll">Open House</a></li>
+                      <li role="presentation"><a href="#financial-aid" class="smooth-scroll">Financial Aid</a></li>
+                      <li role="presentation"><a href="#program-selection" class="smooth-scroll">Programs</a></li>
+                      <li role="presentation"><a href="#edu-levels" class="smooth-scroll">Level</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class-"col-md-10"></div>
+        </div>
+    
+    <div class="row no-gutters" id="open-house">
+        <div class="relative">
+            <img id="pretty-picture" class="visible-md visible-lg" src="http://www.fillmurray.com/450/400">
+        </div>
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-10 col-xs-12">
             <h2>Register for Spring Open House</h2>
-            <p>Yay go us</p>
+            <p>Yay go us! You definitely want to check out our sweet campus, brimming with verve and compassion. This is the only campus with live trained bears. Sign up now.</p>
+            <a href="#" class="link-button">Register</a>
         </div>
+        <div class="col-md-1 col-xs-0"></div>
     </div>
-    <div class="row no-gutters">
-        <div class="col-xs-12">
+    <div class="row no-gutters" id="financial-aid">
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-10 col-xs-12">
             <h2>Financial Aid</h2>
-            <p>Scholarships</p>
-            <a href="https://osap.gov.on.ca/OSAPSecurityWeb/public/login.xhtml">OSAP</a>
+            <p>We've got scholarships!</p>
+            <a href="#" class="link-button">Scholarships</a>
+            <p>OSAP is always good.</p>
+            <a href="https://osap.gov.on.ca/OSAPSecurityWeb/public/login.xhtml" class="link-button">OSAP</a>
         </div>
+        <div class="col-md-1 col-xs-0"></div>
     </div>
-    <div class="row no-gutters">
-        <div class="col-xs-12">
+    <div class="row no-gutters" id="program-selection">
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-10 col-xs-12">
             <h2>Program Selection</h2>
-            <p>also Course information</p>
-            <a href="program_list/full_prog_list.html">Cool</a>
+            <p>Wow look at all these programs!</p>
+            <a href="program_list/full_prog_list.html" class="link-button">Programs</a>
+            <p>also courses</p>
+            <a href="#" class="link-button">Courses</a>
         </div>
+        <div class="col-md-1 col-xs-0"></div>
     </div>
-    <div class="row no-gutters">
-        <div class="col-xs-3">
+    <div class="row">
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-10 col-xs-12">
+            <h2>Academic Levels</h2>
+        </div>
+        <div class="col-md-1 col-xs-0"></div>
+    </div>
+    <div class="row" id="edu-levels">
+
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-2 col-xs-5 edu-levels">
             <h3>International Students</h3>
+            <p>Canada is lovely!</p>
+            <p>You should come here</p>
+            <a href="#">More</a>
         </div>
-        <div class="col-xs-3">
-            <h3>Undergrad</h3>
+        <div class="col-md-3 col-xs-5 edu-levels">
+            <h3>Undergraduate Degrees</h3>
+            <p>High school teachers&colon; &quot;You'll learn this in university&quot;</p>
+            <p>Professors&colon; &quot;You should have learned this in highschool&quot;</p>
+            <a href="#">More</a>
         </div>
-        <div class="col-xs-3">
+        <div class="col-md-2 col-xs-5 edu-levels">
             <h3>Graduate Studies</h3>
+            <p>When you just can't get enough.</p>
+            <a href="http://www.criticalcommons.org/Members/ironman28/clips/30-rock-graduate-students/view" target="_blank">Don't click</a>
         </div>
-        <div class="col-xs-3">
+        <div class="col-md-2 col-xs-5 edu-levels">
             <h3>Continuing Education</h3>
+            <p>America needs you. Save the millenials from themselves.</p>
+            <a href="#">More</a>
         </div>
+        <div class="col-md-2 col-xs-0"></div>
     </div>
 </div>
 
