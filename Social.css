@@ -90,7 +90,8 @@ div#icon-list a:hover .fa-twitter {
 }
 
 div#icon-list a:hover .fa-instagram {
-	color: #c00
+	color: #c00;
+	color: #A21099;
 }
 
 div#icon-list a:hover .fa-linkedin {
