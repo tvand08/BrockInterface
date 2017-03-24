@@ -262,7 +262,12 @@ Footer Styling
 .quick-links.container-fluid{
     margin-top: 20px;
 }
-#current-blurb{
+#current-blurb-head{
+    color: #cc0000;
+    font-size: 40px;
+    font-family: "Trebuchet MS";
+}
+#current-blurb > blockquote{
     font-family: "Trebuchet MS";
     font-weight: 300;
     font-size: 20px;
@@ -270,9 +275,9 @@ Footer Styling
     padding-right: 15%;
     paddding-left:15%;
     margin-top: 30px;
-
-
+    margin-top: 30px;
 }
+
 #social-media >a > i{
     color: whitesmoke;
     padding: 10px;
