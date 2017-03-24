@@ -63,6 +63,17 @@ i:hover{
     margin-bottom: 15px;
 }
 
+table{
+    border: solid thin black;
+    width: 80%;
+    border-radius: 5px;
+}
+form{
+    padding-left: 10px;
+}
+form > select{
+    background-color: #dddddd;
+}
 #footer{
     border-top: solid 20px black;
     background-color: #cc0000;
