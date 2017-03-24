@@ -12,6 +12,11 @@
 	padding-left: 0;
 }
 
+.tooltip.left { 
+	margin-left: 40%;
+	margin-top: 10px;
+}
+
 #news h2 {
 	padding-top: 20px;
 }
