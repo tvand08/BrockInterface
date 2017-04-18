@@ -25,7 +25,7 @@ p {
 
 .edu-levels {
 	margin: 10px;
-	border: 3px solid #007cc2;
+	border: 3px solid #000;
 	border-radius: 3px;
 	padding-bottom: 10px;
 
@@ -34,6 +34,7 @@ p {
 .edu-levels a {
 	display: block;
 	margin-top: 10px;
+	color: #000;
 	border: 1px solid #c00;
 	text-align: center;
 }
